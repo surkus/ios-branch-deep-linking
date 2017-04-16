@@ -1,0 +1,6 @@
+framework module SlugBundle {
+  umbrella header "SlugBundle.h"
+
+  export *
+  module * { export * }
+}

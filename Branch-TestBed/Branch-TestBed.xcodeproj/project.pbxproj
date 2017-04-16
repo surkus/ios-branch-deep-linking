@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B39AA461EA33A4300E23439 /* SlugBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B39AA441EA33A4300E23439 /* SlugBundle.framework */; };
+		2B39AA471EA33A4300E23439 /* SlugBundle.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2B39AA451EA33A4300E23439 /* SlugBundle.framework.dSYM */; };
 		460F4FA71B618A38002E84D6 /* BranchSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 460F4FA51B618A38002E84D6 /* BranchSpotlightUrlRequest.h */; };
 		460F4FA81B618A38002E84D6 /* BranchSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F4FA61B618A38002E84D6 /* BranchSpotlightUrlRequest.m */; };
 		461019461AE551A500379A15 /* BranchNetworkScenarioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 461019451AE551A500379A15 /* BranchNetworkScenarioTests.m */; };
@@ -164,6 +166,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B39AA441EA33A4300E23439 /* SlugBundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SlugBundle.framework; sourceTree = "<group>"; };
+		2B39AA451EA33A4300E23439 /* SlugBundle.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SlugBundle.framework.dSYM; sourceTree = "<group>"; };
 		423ACD2DEBB9A2E4FAF64B08 /* libPods-Branch-SDK-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Branch-SDK-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		460F4FA51B618A38002E84D6 /* BranchSpotlightUrlRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchSpotlightUrlRequest.h; sourceTree = "<group>"; };
 		460F4FA61B618A38002E84D6 /* BranchSpotlightUrlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchSpotlightUrlRequest.m; sourceTree = "<group>"; };
@@ -349,6 +353,7 @@
 				466B58811B1778DB00A69EDE /* libBranch.a in Frameworks */,
 				670016661940F51400A9E103 /* CoreGraphics.framework in Frameworks */,
 				670016681940F51400A9E103 /* UIKit.framework in Frameworks */,
+				2B39AA461EA33A4300E23439 /* SlugBundle.framework in Frameworks */,
 				670016641940F51400A9E103 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +459,8 @@
 		670016621940F51400A9E103 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B39AA441EA33A4300E23439 /* SlugBundle.framework */,
+				2B39AA451EA33A4300E23439 /* SlugBundle.framework.dSYM */,
 				4DDC52611DCC08E700CFB737 /* iAd.framework */,
 				67F270881BA9FCFF002546A7 /* CoreSpotlight.framework */,
 				67163AAD1B9A036F007A8AB1 /* SafariServices.framework */,
@@ -804,6 +811,7 @@
 				6700166E1940F51400A9E103 /* InfoPlist.strings in Resources */,
 				670016771940F51400A9E103 /* Main.storyboard in Resources */,
 				63E4C4901D25E1BC00A45FD8 /* LaunchScreen.storyboard in Resources */,
+				2B39AA471EA33A4300E23439 /* SlugBundle.framework.dSYM in Resources */,
 				63E4C4921D25E1CA00A45FD8 /* Assets.xcassets in Resources */,
 				677F4CB51C1FB1910029F2B3 /* Branch-TestBed.entitlements in Resources */,
 			);
@@ -1134,6 +1142,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = R63EM248DP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Branch-TestBed/Branch-TestBed-Prefix.pch";
 				INFOPLIST_FILE = "Branch-TestBed/Branch-TestBed-Info.plist";
@@ -1155,6 +1167,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = R63EM248DP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Branch-TestBed/Branch-TestBed-Prefix.pch";
 				INFOPLIST_FILE = "Branch-TestBed/Branch-TestBed-Info.plist";

@@ -25,6 +25,7 @@
      * [self registerForPushNotifications:application];
      */
 
+    NSLog(@"Application launching...");
     Branch *branch = [Branch getInstance];
     
     // Comment / un-comment to toggle debugging:
