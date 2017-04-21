@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B39AA461EA33A4300E23439 /* SlugBundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B39AA441EA33A4300E23439 /* SlugBundle.framework */; };
-		2B39AA471EA33A4300E23439 /* SlugBundle.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2B39AA451EA33A4300E23439 /* SlugBundle.framework.dSYM */; };
+		2B5E174C1EA537A8006996A6 /* SlugBundle.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B39AA441EA33A4300E23439 /* SlugBundle.framework */; };
 		460F4FA71B618A38002E84D6 /* BranchSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 460F4FA51B618A38002E84D6 /* BranchSpotlightUrlRequest.h */; };
 		460F4FA81B618A38002E84D6 /* BranchSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 460F4FA61B618A38002E84D6 /* BranchSpotlightUrlRequest.m */; };
 		461019461AE551A500379A15 /* BranchNetworkScenarioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 461019451AE551A500379A15 /* BranchNetworkScenarioTests.m */; };
@@ -167,7 +167,6 @@
 
 /* Begin PBXFileReference section */
 		2B39AA441EA33A4300E23439 /* SlugBundle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SlugBundle.framework; sourceTree = "<group>"; };
-		2B39AA451EA33A4300E23439 /* SlugBundle.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SlugBundle.framework.dSYM; sourceTree = "<group>"; };
 		423ACD2DEBB9A2E4FAF64B08 /* libPods-Branch-SDK-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Branch-SDK-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		460F4FA51B618A38002E84D6 /* BranchSpotlightUrlRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchSpotlightUrlRequest.h; sourceTree = "<group>"; };
 		460F4FA61B618A38002E84D6 /* BranchSpotlightUrlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchSpotlightUrlRequest.m; sourceTree = "<group>"; };
@@ -460,7 +459,6 @@
 			isa = PBXGroup;
 			children = (
 				2B39AA441EA33A4300E23439 /* SlugBundle.framework */,
-				2B39AA451EA33A4300E23439 /* SlugBundle.framework.dSYM */,
 				4DDC52611DCC08E700CFB737 /* iAd.framework */,
 				67F270881BA9FCFF002546A7 /* CoreSpotlight.framework */,
 				67163AAD1B9A036F007A8AB1 /* SafariServices.framework */,
@@ -808,10 +806,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5E174C1EA537A8006996A6 /* SlugBundle.framework in Resources */,
 				6700166E1940F51400A9E103 /* InfoPlist.strings in Resources */,
 				670016771940F51400A9E103 /* Main.storyboard in Resources */,
 				63E4C4901D25E1BC00A45FD8 /* LaunchScreen.storyboard in Resources */,
-				2B39AA471EA33A4300E23439 /* SlugBundle.framework.dSYM in Resources */,
 				63E4C4921D25E1CA00A45FD8 /* Assets.xcassets in Resources */,
 				677F4CB51C1FB1910029F2B3 /* Branch-TestBed.entitlements in Resources */,
 			);
@@ -1089,6 +1087,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1127,6 +1126,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
