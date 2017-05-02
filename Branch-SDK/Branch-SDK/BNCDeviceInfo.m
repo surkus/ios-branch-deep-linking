@@ -188,10 +188,30 @@ static BNCDeviceInfo *bncDeviceInfo;
 }
 
 + (BOOL) isProductionApp {
+
+    // Debug
+    NSError *error = nil;
+    NSURL *URL = [[NSBundle mainBundle] bundleURL];
+    NSArray<NSURL*> *array =
+        [[NSFileManager defaultManager]
+            contentsOfDirectoryAtURL:URL
+            includingPropertiesForKeys:@[ NSFilePosixPermissions ]
+            options:0
+            error:&error];
+
+    for (NSURL* URL in array) {
+        error = nil;
+        id<NSObject> value = nil;
+        [URL getResourceValue:&value forKey:NSFilePosixPermissions error:&error];
+        value = (error) ?: value;
+        NSLog(@"%@ %@", URL, value);
+    }
+
     NSDictionary *entitlements =
         [NSDictionary dictionaryWithContentsOfFile:
             [[NSBundle mainBundle]
                 pathForResource:@"archived-expanded-entitlements" ofType:@"xcent"]];
+    NSLog(@"Ent: %@.", entitlements);
     NSString *environment = entitlements[@"aps-environment"];
     BNCLogDebug(@"Found aps-environment %@.", environment);
     BOOL isProduction = ([environment isEqualToString:@"production"]);
