@@ -217,7 +217,7 @@
 		63E4C48A1D25E17B00A45FD8 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		63E4C48F1D25E1BC00A45FD8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E4C4911D25E1CA00A45FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		670016601940F51400A9E103 /* Branch-TestBed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Branch-TestBed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		670016601940F51400A9E103 /* TestBed-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestBed-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		670016631940F51400A9E103 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		670016651940F51400A9E103 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		670016671940F51400A9E103 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -407,7 +407,7 @@
 		670016611940F51400A9E103 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				670016601940F51400A9E103 /* Branch-TestBed.app */,
+				670016601940F51400A9E103 /* TestBed-2.app */,
 				7E6B3B511AA42D0E005F45BF /* Branch-SDK-Tests.xctest */,
 				466B58381B17773000A69EDE /* libBranch.a */,
 			);
@@ -619,9 +619,9 @@
 			productReference = 466B58381B17773000A69EDE /* libBranch.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		6700165F1940F51400A9E103 /* Branch-TestBed */ = {
+		6700165F1940F51400A9E103 /* TestBed-2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 670016921940F51400A9E103 /* Build configuration list for PBXNativeTarget "Branch-TestBed" */;
+			buildConfigurationList = 670016921940F51400A9E103 /* Build configuration list for PBXNativeTarget "TestBed-2" */;
 			buildPhases = (
 				6700165C1940F51400A9E103 /* Sources */,
 				6700165D1940F51400A9E103 /* Frameworks */,
@@ -632,9 +632,9 @@
 			dependencies = (
 				466B58701B1777DE00A69EDE /* PBXTargetDependency */,
 			);
-			name = "Branch-TestBed";
+			name = "TestBed-2";
 			productName = "Branch-TestBed";
-			productReference = 670016601940F51400A9E103 /* Branch-TestBed.app */;
+			productReference = 670016601940F51400A9E103 /* TestBed-2.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7E6B3B501AA42D0E005F45BF /* Branch-SDK-Tests */ = {
@@ -701,7 +701,7 @@
 			projectRoot = "";
 			targets = (
 				466B58371B17773000A69EDE /* Branch */,
-				6700165F1940F51400A9E103 /* Branch-TestBed */,
+				6700165F1940F51400A9E103 /* TestBed-2 */,
 				7E6B3B501AA42D0E005F45BF /* Branch-SDK-Tests */,
 			);
 		};
@@ -1048,7 +1048,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Branch-TestBed/Branch-TestBed-Prefix.pch";
 				INFOPLIST_FILE = "Branch-TestBed/Branch-TestBed-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
@@ -1070,7 +1070,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Branch-TestBed/Branch-TestBed-Prefix.pch";
 				INFOPLIST_FILE = "Branch-TestBed/Branch-TestBed-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.sdk.Branch-TestBed-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
@@ -1132,7 +1132,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		670016921940F51400A9E103 /* Build configuration list for PBXNativeTarget "Branch-TestBed" */ = {
+		670016921940F51400A9E103 /* Build configuration list for PBXNativeTarget "TestBed-2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				670016931940F51400A9E103 /* Debug */,

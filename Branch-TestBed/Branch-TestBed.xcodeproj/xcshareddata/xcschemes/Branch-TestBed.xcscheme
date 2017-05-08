@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6700165F1940F51400A9E103"
-               BuildableName = "Branch-TestBed.app"
-               BlueprintName = "Branch-TestBed"
+               BuildableName = "TestBed-2.app"
+               BlueprintName = "TestBed-2"
                ReferencedContainer = "container:Branch-TestBed.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6700165F1940F51400A9E103"
-            BuildableName = "Branch-TestBed.app"
-            BlueprintName = "Branch-TestBed"
+            BuildableName = "TestBed-2.app"
+            BlueprintName = "TestBed-2"
             ReferencedContainer = "container:Branch-TestBed.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6700165F1940F51400A9E103"
-            BuildableName = "Branch-TestBed.app"
-            BlueprintName = "Branch-TestBed"
+            BuildableName = "TestBed-2.app"
+            BlueprintName = "TestBed-2"
             ReferencedContainer = "container:Branch-TestBed.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -105,8 +105,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6700165F1940F51400A9E103"
-            BuildableName = "Branch-TestBed.app"
-            BlueprintName = "Branch-TestBed"
+            BuildableName = "TestBed-2.app"
+            BlueprintName = "TestBed-2"
             ReferencedContainer = "container:Branch-TestBed.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
