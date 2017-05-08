@@ -20,10 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    /**
-     * // Push notification support (Optional)
-     * [self registerForPushNotifications:application];
-     */
 
     Branch *branch = [Branch getInstance];
     
@@ -79,6 +75,9 @@
             NSLog(@"Branch TestBed: Initialization failed\n%@", error.localizedDescription);
         }
     }];
+
+    // Push notification support (Optional)
+    [self registerForPushNotifications:application];
 
     return YES;
 }
@@ -158,17 +157,23 @@ continueUserActivity:(NSUserActivity *)userActivity
 
 // Helper method
 - (void)registerForPushNotifications:(UIApplication *)application {
+
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:
             (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge)
                 categories:nil]];
         [application registerForRemoteNotifications];
+
     } else {
+
         #pragma clang diagnostic push
         #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
         [application registerForRemoteNotificationTypes:
             (UIRemoteNotificationTypeNewsstandContentAvailability| UIRemoteNotificationTypeBadge |
                 UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+
         #pragma clang diagnostic push
     }
 }

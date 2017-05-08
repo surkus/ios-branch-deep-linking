@@ -296,12 +296,14 @@ void ForceCategoriesToLoad() {
     self.preferenceHelper.installRequestDelay = installRequestDelay;
 }
 
-- (void) setNotificationToken:(NSData*)notificationToken {
+- (void) setNotificationToken:(NSData*)notificationTokenData {
     BNCPreferenceHelper *preferences = [BNCPreferenceHelper preferenceHelper];
     BOOL isProductionApp = [BNCDeviceInfo getInstance].isProductionApp;
 
+    NSString *notificationToken = [BNCEncodingUtils hexStringFromData:notificationTokenData];
+
     if (preferences.notificationToken && notificationToken &&
-       [preferences.notificationToken isEqualToData:notificationToken] &&
+       [preferences.notificationToken isEqualToString:notificationToken] &&
        !!preferences.isProductionApp == !!isProductionApp) {
        // Already registered.
        return;
@@ -312,11 +314,12 @@ void ForceCategoriesToLoad() {
         return;
     }
 
-    BNCDeviceInfo *deviceInfo = [[BNCDeviceInfo getInstance] copy];
+    BNCDeviceInfo *deviceInfo = [[BNCDeviceInfo alloc] init];
     deviceInfo.notificationToken = notificationToken;
     deviceInfo.isProductionApp = isProductionApp;
     BNCServerRequest *request =
-        [[BNCDeviceInfoUpdateRequest alloc] initWithDeviceInfo:deviceInfo
+        [[BNCDeviceInfoUpdateRequest alloc]
+            initWithDeviceInfo:deviceInfo
             completion:^(NSDictionary*response, NSError*error) {
                 if (!error) {
                     BNCPreferenceHelper *preferences = [BNCPreferenceHelper preferenceHelper];

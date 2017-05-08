@@ -8,6 +8,7 @@
 
 #import "BNCDeviceInfoUpdateRequest.h"
 #import "BranchConstants.h"
+#import "NSMutableDictionary+Branch.h"
 
 #pragma mark BNCDeviceInfoUpdateRequest
 
@@ -35,17 +36,13 @@
            callback:(BNCServerCallback)callback {
 
     BNCPreferenceHelper *preferenceHelper = [BNCPreferenceHelper preferenceHelper];
-
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[BRANCH_REQUEST_KEY_ACTION] = @"device_info_update";
-    params[BRANCH_REQUEST_KEY_DEVICE_FINGERPRINT_ID] = preferenceHelper.deviceFingerprintID;
-    params[BRANCH_REQUEST_KEY_BRANCH_IDENTITY] = preferenceHelper.identityID;
-    params[BRANCH_REQUEST_KEY_SESSION_ID] = preferenceHelper.sessionID;
+    [params bnc_safeSetObject:preferenceHelper.deviceFingerprintID forKey:BRANCH_REQUEST_KEY_DEVICE_FINGERPRINT_ID];
+    [params bnc_safeSetObject:preferenceHelper.identityID forKey:BRANCH_REQUEST_KEY_BRANCH_IDENTITY];
+    [params bnc_safeSetObject:preferenceHelper.sessionID forKey:BRANCH_REQUEST_KEY_SESSION_ID];
+    [params bnc_safeSetObject:self.deviceInfoDictionary forKey:@"device_info"];
 
-	if (self.deviceInfoDictionary)
-		params[@"device_info"] = self.deviceInfoDictionary;
-
-	NSString *URL = [preferenceHelper getAPIURL:BRANCH_REQUEST_ENDPOINT_USER_COMPLETED_ACTION];
+	NSString *URL = [preferenceHelper getAPIURL:BRANCH_REQUEST_ENDPOINT_DEVICE_UPDATE];
     [serverInterface postRequest:params
 							 url:URL
 							 key:key
@@ -58,7 +55,7 @@
 	NSDictionary *dictionary =
 		([response.data isKindOfClass:[NSDictionary class]])
 		? (NSDictionary*) response.data
-		: nil;
+		: [NSDictionary dictionary];
 		
 	if (self.completion)
 		self.completion(dictionary, error);
@@ -69,7 +66,6 @@
 - (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
 	if (!self) return self;
-
 	self.deviceInfoDictionary = [decoder decodeObjectForKey:@"deviceInfoDictionary"];
     return self;
 }
