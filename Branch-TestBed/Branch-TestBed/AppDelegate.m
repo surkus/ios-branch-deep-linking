@@ -32,7 +32,7 @@
     // Turn this on to debug Apple Search Ads.  Should not be included for production.
     // [branch setAppleSearchAdsDebugMode];
     
-    [branch setWhiteListedSchemes:@[@"branchtest"]];
+    [branch setWhiteListedSchemes:@[@"branchnote"]];
 
     // Automatic Deeplinking on "deeplink_text"
     NavigationController *navigationController =
