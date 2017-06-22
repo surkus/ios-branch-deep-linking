@@ -508,8 +508,6 @@
 				4D8EE7A41E1F0A5D00B1F450 /* BNCCommerceEvent.m */,
 				7E6ACAF919E324120066913E /* BNCConfig.h */,
 				4D3FA94A1DFF31EB00E2B6A9 /* BNCConfig.m */,
-				466D5A0F1B5991E3009DB845 /* BNCContentDiscoveryManager.h */,
-				466D5A101B5991E3009DB845 /* BNCContentDiscoveryManager.m */,
 				4DA5771B1E67B22700A43BDD /* BNCDebug.h */,
 				4DA5771C1E67B22700A43BDD /* BNCDebug.m */,
 				7D5882301CA1BEEA00FF6358 /* BNCDeviceInfo.h */,
@@ -573,6 +571,8 @@
 		7D0C97081D875177004E14B1 /* BranchContentDiscovery */ = {
 			isa = PBXGroup;
 			children = (
+				466D5A0F1B5991E3009DB845 /* BNCContentDiscoveryManager.h */,
+				466D5A101B5991E3009DB845 /* BNCContentDiscoveryManager.m */,
 				7D0C971A1D8753EA004E14B1 /* BranchContentDiscoverer.h */,
 				7D0C97181D8753C9004E14B1 /* BranchContentDiscoverer.m */,
 				7D0C971B1D875445004E14B1 /* BranchContentDiscoveryManifest.h */,

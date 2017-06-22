@@ -29,12 +29,12 @@
 @implementation BranchContentDiscoverer
 
 + (BranchContentDiscoverer *)getInstance {
-    static BranchContentDiscoverer *sharedInstance = nil;
     @synchronized (self) {
+        static BranchContentDiscoverer *sharedInstance = nil;
         if (!sharedInstance) {
             sharedInstance = [[BranchContentDiscoverer alloc] init];
         }
-    return sharedInstance;
+        return sharedInstance;
     }
 }
 

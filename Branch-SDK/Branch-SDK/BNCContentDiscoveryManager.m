@@ -285,7 +285,7 @@
               spotlightCallback:spotlightCallback];
 }
 
-//This is the final one, which figures out which callback to use, if any
+// This is the final one, which figures out which callback to use, if any
 // The simpler callbackWithURL overrides spotlightCallback, so don't send both
 - (void)indexContentWithTitle:(NSString *)title
                   description:(NSString *)description
@@ -414,6 +414,7 @@
 
 
 - (void)indexContentWithUrl:(NSString *)url spotlightIdentifier:(NSString *)spotlightIdentifier title:(NSString *)title description:(NSString *)description type:(NSString *)type thumbnailUrl:(NSURL *)thumbnailUrl thumbnailData:(NSData *)thumbnailData publiclyIndexable:(BOOL)publiclyIndexable userInfo:(NSDictionary *)userInfo keywords:(NSSet *)keywords expirationDate:(NSDate *)expirationDate callback:(callbackWithUrl)callback spotlightCallback:(callbackWithUrlAndSpotlightIdentifier)spotlightCallback {
+
 #if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 90000
     
     id CSSearchableItemAttributeSetClass = NSClassFromString(@"CSSearchableItemAttributeSet");
