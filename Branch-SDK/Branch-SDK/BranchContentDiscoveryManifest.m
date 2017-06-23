@@ -7,11 +7,9 @@
 //
 
 
-#import <Foundation/Foundation.h>
 #import "BranchContentDiscoveryManifest.h"
 #import "BNCPreferenceHelper.h"
 #import "BranchContentPathProperties.h"
-#import <UIKit/UIKit.h>
 #import "BranchConstants.h"
 
 

@@ -2,14 +2,13 @@
 //  ContentDiscoverer.h
 //  Branch-TestBed
 //
+//  This content discovery
 //  Created by Sojan P.R. on 8/17/16.
 //  Copyright © 2016 Branch Metrics. All rights reserved.
 //
 
-
 #import <UIKit/UIKit.h>
 #import "BranchContentDiscoveryManifest.h"
-
 
 @interface BranchContentDiscoverer : NSObject
 

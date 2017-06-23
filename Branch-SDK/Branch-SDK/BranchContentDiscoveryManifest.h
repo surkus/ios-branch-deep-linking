@@ -5,16 +5,13 @@
 //  Created by Sojan P.R. on 8/18/16.
 //  Copyright © 2016 Branch Metrics. All rights reserved.
 //
-#import "BranchContentPathProperties.h"
+
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#ifndef ContentDiscoverManifest_h
-#define ContentDiscoverManifest_h
-
-
-#endif /* ContentDiscoverManifest_h */
+#import "BranchContentPathProperties.h"
 
 @interface BranchContentDiscoveryManifest : NSObject
-//---- Properties---------------//
+
 @property (strong, nonatomic) NSMutableDictionary *cdManifest;
 @property (strong, nonatomic) NSString *referredLink;
 @property (nonatomic) NSInteger maxTextLen;

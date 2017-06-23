@@ -2,6 +2,10 @@
 //  BNCContentDiscoveryManager.h
 //  Branch-TestBed
 //
+//  The BNCContentDiscoveryManager class is used by the Branch master class to index your app
+//  content on spotlight. You don't need to use this class directly. Rather, create a Branch
+//  Universal Object and index your content with that.
+//
 //  Created by Graham Mueller on 7/17/15.
 //  Copyright © 2015 Branch Metrics. All rights reserved.
 //

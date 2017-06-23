@@ -6,11 +6,7 @@
 //  Copyright © 2016 Branch Metrics. All rights reserved.
 //
 
-#ifndef ContentPathProperties_h
-#define ContentPathProperties_h
-
-
-#endif /* ContentPathProperties_h */
+#import <Foundation/Foundation.h>
 
 @interface BranchContentPathProperties : NSObject
 
