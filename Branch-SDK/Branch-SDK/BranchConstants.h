@@ -110,6 +110,7 @@ extern NSString * const BRANCH_LINK_DATA_KEY_EMAIL_HTML_LINK_TEXT;
 
 extern NSString * const BRANCH_SPOTLIGHT_PREFIX;
 
+//TODO: old:
 extern NSString * const BRANCH_MANIFEST_VERSION_KEY;
 extern NSString * const BRANCH_HASH_MODE_KEY;
 extern NSString * const BRANCH_MANIFEST_KEY;
@@ -119,6 +120,7 @@ extern NSString * const BRANCH_MAX_TEXT_LEN_KEY;
 extern NSString * const BRANCH_MAX_VIEW_HISTORY_LENGTH;
 extern NSString * const BRANCH_MAX_PACKET_SIZE_KEY;
 extern NSString * const BRANCH_CONTENT_DISCOVER_KEY;
+//
 extern NSString * const BRANCH_BUNDLE_IDENTIFIER;
 extern NSString * const BRANCH_TIME_STAMP_KEY;
 extern NSString * const BRANCH_TIME_STAMP_CLOSE_KEY;
