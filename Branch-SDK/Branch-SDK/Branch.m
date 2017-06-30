@@ -116,12 +116,11 @@ void ForceCategoriesToLoad(void) {
 
 #pragma mark - GetInstance methods
 
-+ (void) initialize {
++ (void) load {
     if (self == [Branch self]) {
         NSURL *logURL = BNCURLForBranchDirectory();
         logURL = [logURL URLByAppendingPathComponent:@"Branch.log"];
         BNCLogSetOutputToURLByteWrap(logURL,  102400);
-        BNCLogSetDisplayLevel(BNCLogLevelWarning);
         BNCLogDebug(@"Branch version %@ started at %@.", BNC_SDK_VERSION, [NSDate date]);
     }
 }
