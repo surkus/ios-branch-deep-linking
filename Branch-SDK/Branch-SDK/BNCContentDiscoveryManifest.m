@@ -15,7 +15,7 @@
     self = [super init];
     if (!self) return self;
 
-    _manifestVersion = 0;
+    _manifestScrapeVersion = 0;
     _maxPacketBytes = 10240;
     _maxDiscoveryPaths = 5;
     _maxValueLength = 250;
@@ -55,7 +55,7 @@
     }
 
     field(referredLink, NSString, @"rl", fObject);
-    field(manifestVersion, NSNumber, @"mv", fInteger);
+    field(manifestScrapeVersion, NSNumber, @"mv", fInteger);
     field(maxPacketBytes, NSNumber, @"mps", fInteger);
     field(maxDiscoveryPaths, NSNumber, @"mhl", fInteger);
     field(maxValueLength, NSNumber, @"mtl", fInteger);
@@ -101,6 +101,7 @@
     field(contentValues, NSArray, @"cd", fObject);
     field(enableScrollWatch, NSNumber, @"branch_ews", fInteger);
     field(maxDiscoveryRepeat, NSNumber, @"mdr", fInteger);
+    field(discoveryMode, NSNumber, @"d1", fInteger);
 
     #undef field
     #undef fObject
