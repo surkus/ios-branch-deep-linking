@@ -1,6 +1,6 @@
 //
 //  BNCContentDiscoveryManifest.h
-//  Branch-TestBed
+//  Branch-SDK
 //
 //  Created by Edward Smith on 6/23/17.
 //  Copyright © 2017 Branch Metrics. All rights reserved.

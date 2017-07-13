@@ -1,6 +1,6 @@
 //
 //  BNCContentItem.h
-//  Branch
+//  Branch-SDK
 //
 //  Created by Edward Smith on 6/20/17.
 //  Copyright © 2017 Branch. All rights reserved.

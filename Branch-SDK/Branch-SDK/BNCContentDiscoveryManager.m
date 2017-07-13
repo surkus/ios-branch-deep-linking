@@ -1,6 +1,6 @@
 //
 //  BNCContentDiscoveryManager.m
-//  Branch-TestBed
+//  Branch-SDK
 //
 //  Created by Graham Mueller on 7/17/15.
 //  Copyright © 2015 Branch Metrics. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  ContentDiscoverer.h
-//  Branch-TestBed
+//  Branch-SDK
 //
 //  This content discovery
 //  Created by Sojan P.R. on 8/17/16.

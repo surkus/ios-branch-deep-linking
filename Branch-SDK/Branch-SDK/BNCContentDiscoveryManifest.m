@@ -1,6 +1,6 @@
 //
 //  BNCContentDiscoveryManifest.m
-//  Branch-TestBed
+//  Branch-SDK
 //
 //  Created by Edward Smith on 6/23/17.
 //  Copyright © 2017 Branch Metrics. All rights reserved.
@@ -90,7 +90,7 @@
     }
 
     field(referredLink, NSString, @"rl", fObject);
-    field(manifestVersion, NSNumber, @"mv", fInteger);
+    field(manifestScrapeVersion, NSNumber, @"mv", fInteger);
     field(maxPacketBytes, NSNumber, @"mps", fInteger);
     field(maxDiscoveryPaths, NSNumber, @"mhl", fInteger);
     field(maxValueLength, NSNumber, @"mtl", fInteger);

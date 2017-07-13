@@ -1,6 +1,6 @@
 //
 //  ContentPathProperties.h
-//  Branch-TestBed
+//  Branch-SDK
 //
 //  Created by Sojan P.R. on 8/19/16.
 //  Copyright © 2016 Branch Metrics. All rights reserved.
