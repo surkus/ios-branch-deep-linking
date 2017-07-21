@@ -115,7 +115,7 @@ void ForceCategoriesToLoad(void) {
 
 #pragma mark - GetInstance methods
 
-+ (void) load {
++ (void) initialize {
     if (self == [Branch self]) {
         NSURL *logURL = BNCURLForBranchDirectory();
         logURL = [logURL URLByAppendingPathComponent:@"Branch.log"];

@@ -88,7 +88,6 @@
 
 - (BranchContentPathProperties *)getContentPathProperties:(UIViewController *)viewController {
     BranchContentPathProperties *contentPathProperties;
-    
     if (_contentPaths) {
         NSString *viewPath = [NSString stringWithFormat:@"/%@", ([viewController class])];
         for (NSDictionary *pathObj in _contentPaths) {

@@ -36,7 +36,6 @@
         _callback = callback;
         _isInstall = isInstall;
     }
-
     return self;
 }
 
@@ -94,7 +93,9 @@
     }
 
     BNCPreferenceHelper *preferenceHelper = [BNCPreferenceHelper preferenceHelper];
-    NSDictionary *data = response.data;
+    // eDebug
+    //NSDictionary *data = response.data;
+    NSMutableDictionary *data = [NSMutableDictionary dictionaryWithDictionary:data];
 
     // Handle possibly mis-parsed identity.
     id userIdentity = data[BRANCH_RESPONSE_KEY_DEVELOPER_IDENTITY];
@@ -153,6 +154,11 @@
         }
     }
     BranchContentDiscoveryManifest *cdManifest = [BranchContentDiscoveryManifest getInstance];
+    // eDebug - Force the CD
+    data[BRANCH_CONTENT_DISCOVER_KEY] = @{
+        @"mv":  @1,
+        @"dm":  @1
+    };
     [cdManifest onBranchInitialised:data withUrl:referredUrl];
     if ([cdManifest isCDEnabled]) {
         [[BranchContentDiscoverer getInstance] startDiscoveryTaskWithManifest:cdManifest];

@@ -16,9 +16,9 @@
 		4D510D721F0D6014003D720B /* BNCDeepLinkViewControllerInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D510D701F0D6014003D720B /* BNCDeepLinkViewControllerInstance.h */; };
 		4D510D731F0D6014003D720B /* BNCDeepLinkViewControllerInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D510D711F0D6014003D720B /* BNCDeepLinkViewControllerInstance.m */; };
 		4DA40A8F1E1F0011004D2534 /* BNCCommerceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA40A8D1E1F0011004D2534 /* BNCCommerceEvent.m */; };
-		4DB47D461F0424B200C53C29 /* BNCDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB47D401F0424B200C53C29 /* BNCDebug.h */; };
+		4DB47D461F0424B200C53C29 /* BNCDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB47D401F0424B200C53C29 /* BNCDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB47D471F0424B200C53C29 /* BNCDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB47D411F0424B200C53C29 /* BNCDebug.m */; };
-		4DB47D481F0424B200C53C29 /* BNCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB47D421F0424B200C53C29 /* BNCLog.h */; };
+		4DB47D481F0424B200C53C29 /* BNCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB47D421F0424B200C53C29 /* BNCLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB47D491F0424B200C53C29 /* BNCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB47D431F0424B200C53C29 /* BNCLog.m */; };
 		4DB47D4A1F0424B200C53C29 /* NSString+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB47D441F0424B200C53C29 /* NSString+Branch.h */; };
 		4DB47D4B1F0424B200C53C29 /* NSString+Branch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB47D451F0424B200C53C29 /* NSString+Branch.m */; };
@@ -424,7 +424,6 @@
 				E230A1861D03DB9E006181D8 /* Branch.h in Headers */,
 				E230A1791D03DB9E006181D8 /* BNCPreferenceHelper.h in Headers */,
 				4D510D721F0D6014003D720B /* BNCDeepLinkViewControllerInstance.h in Headers */,
-				4DB47D481F0424B200C53C29 /* BNCLog.h in Headers */,
 				E230A17B1D03DB9E006181D8 /* BNCServerInterface.h in Headers */,
 				E230A1961D03DB9E006181D8 /* BranchViewHandler.h in Headers */,
 				7DA3BF211D889CE500CA8AE0 /* BranchContentPathProperties.h in Headers */,
@@ -436,7 +435,9 @@
 				E230A18E1D03DB9E006181D8 /* BranchDeepLinkingController.h in Headers */,
 				E230A1921D03DB9E006181D8 /* BranchUniversalObject.h in Headers */,
 				E230A1771D03DB9E006181D8 /* BNCLinkData.h in Headers */,
+				4DB47D481F0424B200C53C29 /* BNCLog.h in Headers */,
 				E230A1851D03DB9E006181D8 /* Branch-SDK-Prefix.pch in Headers */,
+				4DB47D461F0424B200C53C29 /* BNCDebug.h in Headers */,
 				4DCEE4B31F17EE2100B2B409 /* BNCContentItem.h in Headers */,
 				4DB5673A1E79FDAF00A8A324 /* BranchShareLink.h in Headers */,
 				E230A1B61D03DB9F006181D8 /* BranchSpotlightUrlRequest.h in Headers */,
@@ -445,7 +446,6 @@
 				E230A1B01D03DB9E006181D8 /* BranchSetIdentityRequest.h in Headers */,
 				E230A16F1D03DB9E006181D8 /* BNCDeviceInfo.h in Headers */,
 				E2B9477B1D15E31700F2270D /* BNCCallbacks.h in Headers */,
-				4DB47D461F0424B200C53C29 /* BNCDebug.h in Headers */,
 				E2B9477E1D15E3C100F2270D /* BNCFabricAnswers.h in Headers */,
 				E230A1811D03DB9E006181D8 /* BNCStrongMatchHelper.h in Headers */,
 				E230A1731D03DB9E006181D8 /* BNCError.h in Headers */,
