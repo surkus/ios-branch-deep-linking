@@ -17,9 +17,11 @@
                      completion:(void (^) (BranchUniversalObject*universalObject, NSError *error))completion;
 
 /*!
- param universalObjects     An array of BranchUniversalObject content items that will be indexed.
- param completion           The `completion` block is called once after all items have been indexed or failed.
- param failureHandler       The `failureHandler` is called once per BranchUniversalObject that fails to index.
+ Indexes an array of BranchUniversalObject on spotlight.
+
+ @param universalObjects    An array of BranchUniversalObject content items that will be indexed.
+ @param completion          The `completion` block is called once after all items have been indexed or fail to index.
+ @param failureHandler      The `failureHandler` is called once per BranchUniversalObject that fails to index.
 */
 - (void) indexObjectsOnSpotlight:(NSArray<BranchUniversalObject*>*)universalObjects
                       completion:(void (^) (NSArray<BranchUniversalObject*>*universalObjects))completion
