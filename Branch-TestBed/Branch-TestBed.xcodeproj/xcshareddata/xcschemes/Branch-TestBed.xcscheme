@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      enableAddressSanitizer = "YES"
       language = ""
       shouldUseLaunchSchemeArgsEnv = "NO"
       codeCoverageEnabled = "YES">
@@ -42,6 +43,16 @@
             <DeviceAppData
                resolvedPath = "../Simulate-FirstRun.xcappdata">
             </DeviceAppData>
+         </TestableReference>
+         <TestableReference
+            skipped = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F1D4F9AB1F323F01002D13FF"
+               BuildableName = "Branch-TestBed-UITests.xctest"
+               BlueprintName = "Branch-TestBed-UITests"
+               ReferencedContainer = "container:Branch-TestBed.xcodeproj">
+            </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
@@ -93,7 +104,7 @@
          <EnvironmentVariable
             key = "OS_ACTIVITY_MODE"
             value = "disable"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
