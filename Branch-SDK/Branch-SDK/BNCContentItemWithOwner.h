@@ -15,5 +15,6 @@
 - (NSString*) itemName;
 - (NSString*) itemValue;
 - (BRNContentItemWithOwner*) superOwner;
+- (NSString*) description;
 
 @end

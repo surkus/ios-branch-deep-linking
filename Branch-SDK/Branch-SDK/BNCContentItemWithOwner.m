@@ -11,11 +11,10 @@
 #import "BNCLog.h"
 #import <objc/runtime.h>
 
-@interface BNCDummyClassForSelectorDefinitions : NSObject
-
 // Dummy selectors to fool the compiler when we reference them later.
-- (id)af_activeImageDownloadReceipt;
-- (nullable NSURL *)sd_imageURL;
+@interface BNCDummyClassForSelectorDefinitions : NSObject
+- (id) af_activeImageDownloadReceipt;
+- (nullable NSURL *) sd_imageURL;
 - (NSURL*) imageURL;
 - (NSURL*) imageUrl;
 - (NSURL*) Url;
@@ -253,7 +252,7 @@
 }
 
 - (NSString*) description {
-    return [NSString stringWithFormat:@"<%@: 0x%lx item: %@ owner: %@ ivar: %@ value: %@>",
+    return [NSString stringWithFormat:@"<%@: 0x%016lx item: %@ owner: %@ ivar: %@ value: %@>",
         NSStringFromClass(self.class), (unsigned long) self, NSStringFromClass(_item.class),
         NSStringFromClass(_owner.class), _ivarName, _itemValue];
 }

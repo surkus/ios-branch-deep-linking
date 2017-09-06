@@ -15,4 +15,5 @@
 @property (nonatomic, strong) NSString *value;
 
 + (NSArray<BNCContentItem*>*) contentForBaseView:(UIView*)view;
+
 @end

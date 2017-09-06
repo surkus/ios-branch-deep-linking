@@ -60,13 +60,12 @@
             });
             dispatch_source_set_timer(
                 self.discoveryTimerSource,
-                dispatch_time(DISPATCH_TIME_NOW, self.manifest.discoveryInterval * NSEC_PER_SEC),
-                self.manifest.discoveryInterval * NSEC_PER_SEC,
+                dispatch_time(DISPATCH_TIME_NOW, self.manifest.discoveryInterval * (double) NSEC_PER_SEC),
+                self.manifest.discoveryInterval * (double) NSEC_PER_SEC,
                 (1ull * NSEC_PER_SEC) / 10
             );
 
         }
-
         
     }
 }
@@ -94,14 +93,14 @@
 
 - (void) discoverContentForView:(UIView*)view withReason:(NSString*)reason {
     NSDate *startDate = [NSDate date];
-    BNCLogDebug(@"Scrape reason %@ start %@ view %@.", reason, startDate, view);
+    BNCLogDebugSDK(@"Scrape reason %@ start %@ view %@.", reason, startDate, view);
 
     NSArray<BNCContentItem*> *contentArray = [BNCContentItem contentForBaseView:view];
     for (BNCContentItem *item in contentArray) {
-        BNCLogDebug(@"%@: %@", item.path, item.value);
+        BNCLogDebugSDK(@"%@: %@", item.path, item.value);
     }
 
-    BNCLogDebug(@"Scrape reason %@ elapsed: %1.3fs view %@.",
+    BNCLogDebugSDK(@"Scrape reason %@ elapsed: %1.3fs view %@.",
         reason, - [startDate timeIntervalSinceNow], view);
 }
 

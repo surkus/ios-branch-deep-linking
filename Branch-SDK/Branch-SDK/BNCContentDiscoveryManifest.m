@@ -34,7 +34,7 @@
     _discoveryInterval = discoveryInterval;
 }
 
-+ (instancetype) manifestFromDictionary:(NSDictionary*)dictionary {
++ (instancetype) manifestWithDictionary:(NSDictionary*)dictionary {
     if ([dictionary isKindOfClass:[NSDictionary class]]) {
         return nil;
     }
@@ -66,6 +66,7 @@
     field(contentValues, NSArray, @"cd", fObject);
     field(enableScrollWatch, NSNumber, @"branch_ews", fInteger);
     field(maxDiscoveryRepeat, NSNumber, @"mdr", fInteger);
+    field(discoveryMode, NSNumber, @"d1", fInteger);
 
     #undef field
     #undef fObject
@@ -109,6 +110,16 @@
     #undef fDouble
 
     return dictionary;
+}
+
+- (NSString*) description {
+    return [NSString stringWithFormat:
+        @"<%@ 0x016lx url: %@ mode: %ld paths: %@>",
+        NSStringFromClass(self.class),
+        (void*) self,
+        self.discoveryMode,
+        self.referredLink
+    ];
 }
 
 @end
