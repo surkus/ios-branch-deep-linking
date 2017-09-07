@@ -139,6 +139,7 @@
 		4DED5FB41F34F6CE00919C54 /* BNCDeviceInfo.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DED5FB01F34F6CE00919C54 /* BNCDeviceInfo.Test.m */; };
 		4DED5FB51F34F6CE00919C54 /* BNCEncodingUtils.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DED5FB11F34F6CE00919C54 /* BNCEncodingUtils.Test.m */; };
 		4DED5FB71F34F6CE00919C54 /* BranchNetworkScenario.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DED5FB31F34F6CE00919C54 /* BranchNetworkScenario.Test.m */; };
+		4DF62A091F60C15700D50098 /* BNCContentDiscoveryManifest.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF62A081F60C15700D50098 /* BNCContentDiscoveryManifest.Test.m */; };
 		54391A161BA249FA0061CB0F /* BranchCSSearchableItemAttributeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 54391A141BA249FA0061CB0F /* BranchCSSearchableItemAttributeSet.m */; };
 		54FF1F8E1BD1D4AE0004CE2E /* BranchUniversalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FF1F8C1BD1D4AE0004CE2E /* BranchUniversalObject.m */; };
 		54FF1F921BD1DC320004CE2E /* BranchLinkProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FF1F901BD1DC320004CE2E /* BranchLinkProperties.m */; };
@@ -302,6 +303,7 @@
 		4DED5FB01F34F6CE00919C54 /* BNCDeviceInfo.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCDeviceInfo.Test.m; sourceTree = "<group>"; };
 		4DED5FB11F34F6CE00919C54 /* BNCEncodingUtils.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCEncodingUtils.Test.m; sourceTree = "<group>"; };
 		4DED5FB31F34F6CE00919C54 /* BranchNetworkScenario.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchNetworkScenario.Test.m; sourceTree = "<group>"; };
+		4DF62A081F60C15700D50098 /* BNCContentDiscoveryManifest.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCContentDiscoveryManifest.Test.m; sourceTree = "<group>"; };
 		54391A131BA249FA0061CB0F /* BranchCSSearchableItemAttributeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchCSSearchableItemAttributeSet.h; sourceTree = "<group>"; };
 		54391A141BA249FA0061CB0F /* BranchCSSearchableItemAttributeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchCSSearchableItemAttributeSet.m; sourceTree = "<group>"; };
 		54FF1F8B1BD1D4AE0004CE2E /* BranchUniversalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchUniversalObject.h; sourceTree = "<group>"; };
@@ -671,6 +673,7 @@
 		7E6B3B521AA42D0E005F45BF /* Branch-SDK-Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4DF62A081F60C15700D50098 /* BNCContentDiscoveryManifest.Test.m */,
 				7B18DF511F1F049F00C25C84 /* BNCCrashlyticsWrapper.Test.m */,
 				4DA5771E1E67B23D00A43BDD /* BNCDebug.Test.m */,
 				4DED5FB01F34F6CE00919C54 /* BNCDeviceInfo.Test.m */,
@@ -885,8 +888,9 @@
 		670016581940F51400A9E103 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BNC;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "Branch Metrics";
+				ORGANIZATIONNAME = "Branch, Inc.";
 				TargetAttributes = {
 					466B58371B17773000A69EDE = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -1111,6 +1115,7 @@
 				4665AF241B28B7E000184037 /* BranchSetIdentityRequestTests.m in Sources */,
 				46DBB42D1B330CF300642FC8 /* BNCLinkDataTests.m in Sources */,
 				7B18DF521F1F049F00C25C84 /* BNCCrashlyticsWrapper.Test.m in Sources */,
+				4DF62A091F60C15700D50098 /* BNCContentDiscoveryManifest.Test.m in Sources */,
 				46DC40741B2B31A300D2D203 /* BranchLoadRewardsRequestTests.m in Sources */,
 				46DC40701B2A34EE00D2D203 /* BranchUserCompletedActionTests.m in Sources */,
 				46D0B6FA1ACD8EF000CDDE82 /* BNCPreferenceHelperTests.m in Sources */,

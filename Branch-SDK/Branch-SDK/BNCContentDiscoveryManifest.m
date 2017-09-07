@@ -35,7 +35,7 @@
 }
 
 + (instancetype) manifestWithDictionary:(NSDictionary*)dictionary {
-    if ([dictionary isKindOfClass:[NSDictionary class]]) {
+    if (![dictionary isKindOfClass:[NSDictionary class]]) {
         return nil;
     }
     BNCContentDiscoveryManifest *manifest = [[BNCContentDiscoveryManifest alloc] init];
@@ -114,11 +114,12 @@
 
 - (NSString*) description {
     return [NSString stringWithFormat:
-        @"<%@ 0x016lx url: %@ mode: %ld paths: %@>",
-        NSStringFromClass(self.class),
-        (void*) self,
-        self.discoveryMode,
-        self.referredLink
+        @"<%@ 0x%016lx url: %@ mode: %ld paths: %@>",
+            NSStringFromClass(self.class),
+            (unsigned long) self,
+            self.referredLink,
+            self.discoveryMode,
+            self.contentPaths
     ];
 }
 

@@ -24,8 +24,8 @@ typedef NS_ENUM(NSInteger, BNCDiscoveryMode) {
 @property (nonatomic, assign) NSInteger         maxValueLength;
 @property (nonatomic, assign) NSTimeInterval    discoveryInterval;
 @property (nonatomic, assign) BOOL              hashContent;
-@property (nonatomic, strong) NSArray<NSString*> *contentKeys;
 @property (nonatomic, strong) NSArray<NSString*> *contentPaths;
+@property (nonatomic, strong) NSArray<NSString*> *contentKeys;
 @property (nonatomic, strong) NSArray<NSString*> *contentValues;
 @property (nonatomic, assign) BOOL              enableScrollWatch;
 @property (nonatomic, assign) NSInteger         maxDiscoveryRepeat;

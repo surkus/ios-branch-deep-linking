@@ -94,7 +94,7 @@
     }
 
     BNCPreferenceHelper *preferenceHelper = [BNCPreferenceHelper preferenceHelper];
-    // eDebug
+    // eDebug - for testing a manifest.
     //NSDictionary *data = response.data;
     NSMutableDictionary *data = [NSMutableDictionary dictionaryWithDictionary:response.data];
 

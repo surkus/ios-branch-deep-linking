@@ -265,7 +265,10 @@
         return @{};
     }
 
-    NSDictionary *plainDecodedDictionary = [NSJSONSerialization JSONObjectWithData:tempData options:NSJSONReadingMutableContainers error:nil];
+    NSDictionary *plainDecodedDictionary =
+        [NSJSONSerialization JSONObjectWithData:tempData
+            options:NSJSONReadingMutableContainers
+            error:nil];
     if (plainDecodedDictionary) {
         return plainDecodedDictionary;
     }
@@ -277,7 +280,10 @@
         return @{};
     }
 
-    NSDictionary *base64DecodedDictionary = [NSJSONSerialization JSONObjectWithData:tempData options:NSJSONReadingMutableContainers error:nil];
+    NSDictionary *base64DecodedDictionary =
+        [NSJSONSerialization JSONObjectWithData:tempData
+            options:NSJSONReadingMutableContainers
+            error:nil];
     if (base64DecodedDictionary) {
         return base64DecodedDictionary;
     }
