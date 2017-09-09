@@ -175,12 +175,12 @@
             referredUrl = sessionDataDict[BRANCH_RESPONSE_KEY_BRANCH_REFERRING_LINK];
         }
     }
-    BranchContentDiscoveryManifest *cdManifest = [BranchContentDiscoveryManifest getInstance];
     // eDebug - Force the CD
     data[BRANCH_CONTENT_DISCOVER_KEY] = @{
         @"mv":  @1,
         @"dm":  @1
     };
+    BranchContentDiscoveryManifest *cdManifest = [BranchContentDiscoveryManifest getInstance];
     [cdManifest onBranchInitialised:data withUrl:referredUrl];
     if ([cdManifest isCDEnabled]) {
         [[BranchContentDiscoverer getInstance] startDiscoveryTaskWithManifest:cdManifest];
