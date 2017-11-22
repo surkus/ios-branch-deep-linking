@@ -10,6 +10,43 @@
 #import "Branch.h"
 #import "BNCSystemObserver.h"
 
+#if TARGET_OS_TV
+
+@implementation BNCSpotlightService
+
+- (void)indexWithBranchUniversalObject:(BranchUniversalObject* _Nonnull)universalObject
+                        linkProperties:(BranchLinkProperties* _Nullable)linkProperties
+                              callback:(void (^_Nullable)(BranchUniversalObject * _Nullable universalObject,
+                                                          NSString* _Nullable url,
+                                                          NSError * _Nullable error))completion {
+    if (completion) completion(universalObject, nil, nil);
+}
+//indexWithBranchShareLink
+- (void)indexPrivatelyWithBranchUniversalObjects:(NSArray<BranchUniversalObject*>* _Nonnull)universalObjects
+                                      completion:(void (^_Nullable) (NSArray<BranchUniversalObject*>* _Nullable,
+                                                                     NSError* _Nullable))completion {
+    if (completion) completion(nil, nil);
+}
+
+//Remove indexing API
+- (void)removeSearchableItemsWithIdentifier:(NSString * _Nonnull)identifier
+                                   callback:(void (^_Nullable)(NSError * _Nullable error))completion {
+    if (completion) completion(nil);
+}
+
+- (void)removeSearchableItemsWithIdentifiers:(NSArray<NSString *> *_Nonnull)identifiers
+                                    callback:(void (^_Nullable)(NSError * _Nullable error))completion {
+    if (completion) completion(nil);
+}
+
+- (void)removeAllBranchSearchableItemsWithCallback:(void (^_Nullable)(NSError * _Nullable error))completion {
+    if (completion) completion(nil);
+}
+
+@end
+
+#else
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wpartial-availability"
 
@@ -544,3 +581,5 @@ static NSString* const kDomainIdentifier = @"io.branch.sdk.spotlight";
     #undef IndexingNotAvalable
 }
 @end
+
+#endif // !TARGET_OS_TV

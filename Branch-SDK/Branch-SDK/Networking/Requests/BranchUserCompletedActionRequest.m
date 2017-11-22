@@ -65,11 +65,13 @@
 - (void)processResponse:(BNCServerResponse *)response error:(NSError *)error {
     // Check if there is any Branch View to show
     if (!error) {
+        #if !TARGET_OS_TV
         NSDictionary *data = response.data;
         NSObject *branchViewDict = data[BRANCH_RESPONSE_KEY_BRANCH_VIEW_DATA];
         if ([branchViewDict isKindOfClass:[NSDictionary class]]) {
            [[BranchViewHandler getInstance] showBranchView:_action withBranchViewDictionary:(NSDictionary *)branchViewDict andWithDelegate:_branchViewcallback];
         }
+        #endif // !TARGET_OS_TV
     }
 }
 

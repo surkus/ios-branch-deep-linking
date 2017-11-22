@@ -329,6 +329,14 @@ exit:
     return version;
 }
 
+#if TARGET_OS_TV
+
++ (NSString*) userAgentString {
+    return @"";
+}
+
+#else
+
 + (NSString*) userAgentString {
     
     static NSString* brn_browserUserAgentString = nil;
@@ -413,6 +421,8 @@ exit:
 
     return browserUserAgent();
 }
+
+#endif // TARGET_OS_TV
 
 - (NSDictionary*) v2dictionary {
     NSMutableDictionary *dictionary = [NSMutableDictionary new];

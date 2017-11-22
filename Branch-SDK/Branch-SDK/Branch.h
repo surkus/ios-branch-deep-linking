@@ -257,6 +257,7 @@ typedef NS_ENUM(NSUInteger, BranchCreditHistoryOrder) {
 
 #pragma mark - BranchActivityItemProvider methods
 
+#if !TARGET_OS_TV
 ///-----------------------------------------
 /// @name BranchActivityItemProvider methods
 ///-----------------------------------------
@@ -345,7 +346,7 @@ typedef NS_ENUM(NSUInteger, BranchCreditHistoryOrder) {
  */
 + (BranchActivityItemProvider *)getBranchActivityItemWithParams:(NSDictionary *)params feature:(NSString *)feature stage:(NSString *)stage tags:(NSArray *)tags alias:(NSString *)alias delegate:(id <BranchActivityItemProviderDelegate>)delegate;
 
-
+#endif // !TARGET_OS_TV
 
 #pragma mark - Initialization methods
 

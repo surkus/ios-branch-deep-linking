@@ -132,7 +132,6 @@
 + (NSString *)getModel {
     struct utsname systemInfo;
     uname(&systemInfo);
-
     return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
 }
 
@@ -145,7 +144,7 @@
 }
 
 + (NSString *)getOS {
-    return @"iOS";
+    return @"iOS"; // [[UIDevice currentDevice] systemName]; // eDebug - Fix back-end.
 }
 
 + (NSString *)getOSVersion {

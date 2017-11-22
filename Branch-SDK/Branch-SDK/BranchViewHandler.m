@@ -10,6 +10,8 @@
 #import "Branch.h"
 #import "BranchView.h"
 
+#if !TARGET_OS_TV
+
 @interface BranchViewHandler() <UIWebViewDelegate>
 
 @property (nonatomic, strong) BranchView *pendingBranchView;
@@ -148,5 +150,6 @@ static NSString *currentBranchViewID;
     return isRedirectionHandled;
 }
 
-
 @end
+
+#endif // !TARGET_OS_TV

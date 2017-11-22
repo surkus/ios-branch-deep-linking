@@ -7,6 +7,8 @@
 //
 
 #import "BranchUniversalObject.h"
+#if !TARGET_OS_TV
+
 @class BranchShareLink;
 
 @protocol BranchShareLinkDelegate <NSObject>
@@ -112,3 +114,5 @@ Presents a UIActivityViewController that shares the Branch link.
 ///The delegate. See 'BranchShareLinkDelegate' above for a description.
 @property (nonatomic, weak)   id<BranchShareLinkDelegate>_Nullable delegate;
 @end
+
+#endif // !TARGET_OS_TV

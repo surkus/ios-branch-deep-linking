@@ -16,6 +16,8 @@
 - (void)branchViewErrorCode:(NSInteger)errorCode message:(NSString *)errorMsg actionName:(NSString *)actionName withID:(NSString *)branchViewID;
 @end
 
+#if !TARGET_OS_TV
+
 @interface BranchViewHandler : NSObject
 //---- Properties---------------//
 /**
@@ -34,3 +36,5 @@
 - (BOOL)showBranchView:(NSString *)actionName withBranchViewDictionary:(NSDictionary*)branchViewDict andWithDelegate:(id)callback;
 
 @end
+
+#endif // !TARGET_OS_TV

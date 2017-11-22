@@ -282,6 +282,7 @@ static Class bnc_networkServiceClass = NULL;
     }
 }
 
+#if !TARGET_OS_TV
 #pragma mark - BrachActivityItemProvider methods
 
 + (BranchActivityItemProvider *)getBranchActivityItemWithParams:(NSDictionary *)params {
@@ -312,6 +313,7 @@ static Class bnc_networkServiceClass = NULL;
     return [[BranchActivityItemProvider alloc] initWithParams:params tags:tags feature:feature stage:stage campaign:nil alias:alias delegate:delegate];
 }
 
+#endif // !TARGET_OS_TV
 
 #pragma mark - Configuration methods
 
@@ -559,6 +561,7 @@ static BOOL bnc_enableFingerprintIDInCrashlyticsReports = YES;
     // The rest of this function assumes that initSession is being called BEFORE continueUserActivity and openUrl
     // in the application life cycle, and that the SDK is not yet initialized.
 
+    #if !TARGET_OS_TV
     // Handle push notification on app launch
     if ([options objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey]) {
         id branchUrlFromPush = [options objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey][BRANCH_PUSH_NOTIFICATION_PAYLOAD_KEY];
@@ -567,7 +570,8 @@ static BOOL bnc_enableFingerprintIDInCrashlyticsReports = YES;
             self.preferenceHelper.referringURL = branchUrlFromPush;
         }
     }
-
+    #endif // !TARGET_OS_TV
+    
     if ([BNCSystemObserver getOSVersion].integerValue >= 8) {
 
         // Handle case where there's no URI scheme or Universal Link

@@ -186,8 +186,8 @@ FOUNDATION_EXPORT BranchCondition _Nonnull BranchConditionRefurbished;
 /// Returns a Branch long URL to the content item
 - (nullable NSString *)getLongUrlWithChannel:(nullable NSString *)channel andTags:(nullable NSArray *)tags andFeature:(nullable NSString *)feature andStage:(nullable NSString *)stage andAlias:(nullable NSString *)alia;
 
+#if !TARGET_OS_TV
 /// @name Share Sheet Handling
-
 
 - (nullable UIActivityItemProvider *)getBranchActivityItemWithLinkProperties:(nonnull BranchLinkProperties *)linkProperties;
 
@@ -219,9 +219,9 @@ FOUNDATION_EXPORT BranchCondition _Nonnull BranchConditionRefurbished;
                                   anchor:(nullable UIBarButtonItem *)anchor
                      completionWithError:(void (^ _Nullable)(NSString * _Nullable activityType, BOOL completed, NSError*_Nullable error))completion;
 
+#endif // !TARGET_OS_TV
 
 /// @name List items on Spotlight
-
 
 - (void)listOnSpotlight;
 - (void)listOnSpotlightWithCallback:(void (^_Nullable)(NSString * _Nullable url, NSError * _Nullable error))callback;

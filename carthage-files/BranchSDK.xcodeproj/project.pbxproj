@@ -18,6 +18,7 @@
 		4D1ED2821FB3A472007390A8 /* BNCSpotlightService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1ED2801FB3A471007390A8 /* BNCSpotlightService.m */; };
 		4D291AAB1E322ECC007ED118 /* NSMutableDictionary+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D291AA91E322ECC007ED118 /* NSMutableDictionary+Branch.h */; };
 		4D291AAC1E322ECC007ED118 /* NSMutableDictionary+Branch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D291AAA1E322ECC007ED118 /* NSMutableDictionary+Branch.m */; };
+		4D2D6A6F1FC6238C00705A80 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D2D6A6E1FC6238C00705A80 /* Info.plist */; };
 		4D301CE31FA1452100642F4A /* BNCFieldDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB328021FA10C6200ACF9B0 /* BNCFieldDefines.h */; };
 		4D3922BD1E1F0C85004FB7C8 /* BNCCommerceEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3922BC1E1F0C85004FB7C8 /* BNCCommerceEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3FA94D1DFF3F6C00E2B6A9 /* BNCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FA94C1DFF3F6C00E2B6A9 /* BNCConfig.m */; };
@@ -240,6 +241,7 @@
 		4D1ED2801FB3A471007390A8 /* BNCSpotlightService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCSpotlightService.m; sourceTree = "<group>"; };
 		4D291AA91E322ECC007ED118 /* NSMutableDictionary+Branch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Branch.h"; sourceTree = "<group>"; };
 		4D291AAA1E322ECC007ED118 /* NSMutableDictionary+Branch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Branch.m"; sourceTree = "<group>"; };
+		4D2D6A6E1FC6238C00705A80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3922BC1E1F0C85004FB7C8 /* BNCCommerceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCCommerceEvent.h; sourceTree = "<group>"; };
 		4D3FA94C1DFF3F6C00E2B6A9 /* BNCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCConfig.m; sourceTree = "<group>"; };
 		4D510D701F0D6014003D720B /* BNCDeepLinkViewControllerInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCDeepLinkViewControllerInstance.h; sourceTree = "<group>"; };
@@ -248,8 +250,7 @@
 		4D6A27561F2954DE00027264 /* BNCLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCLocalization.m; sourceTree = "<group>"; };
 		4D78C9631F2679F000EEDD5F /* BNCCrashlyticsWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCCrashlyticsWrapper.h; sourceTree = "<group>"; };
 		4D78C9641F2679F000EEDD5F /* BNCCrashlyticsWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCCrashlyticsWrapper.m; sourceTree = "<group>"; };
-		4D7CD8D71FC620D600A10F65 /* Branch (tvOS).framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Branch (tvOS).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D7CD8D81FC620D700A10F65 /* Branch copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Branch copy-Info.plist"; path = "/Users/esmith/Documents/Development/BranchMetrics/ARNClassicFilms/Vendor/BranchMetrics/ios-branch-deep-linking/carthage-files/Branch copy-Info.plist"; sourceTree = "<absolute>"; };
+		4D7CD8D71FC620D600A10F65 /* Branch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Branch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA40A8D1E1F0011004D2534 /* BNCCommerceEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCCommerceEvent.m; sourceTree = "<group>"; };
 		4DAB17711EE8A31B0079EEB4 /* BNCNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCNetworkService.h; sourceTree = "<group>"; };
 		4DAB17721EE8A31B0079EEB4 /* BNCNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCNetworkService.m; sourceTree = "<group>"; };
@@ -343,7 +344,6 @@
 		E230A16A1D03DB9E006181D8 /* Fabric+FABKits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fabric+FABKits.h"; sourceTree = "<group>"; };
 		E230A16B1D03DB9E006181D8 /* Fabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fabric.h; sourceTree = "<group>"; };
 		E298D0521C73D1B800589D22 /* Branch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Branch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E298D0571C73D1B800589D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2B947761D15E2D100F2270D /* ANSCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSCompatibility.h; sourceTree = "<group>"; };
 		E2B947771D15E2D100F2270D /* Answers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answers.h; sourceTree = "<group>"; };
 		E2B9477A1D15E31700F2270D /* BNCCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCCallbacks.h; sourceTree = "<group>"; };
@@ -521,11 +521,10 @@
 		E298D0481C73D1B800589D22 = {
 			isa = PBXGroup;
 			children = (
-				E298D0571C73D1B800589D22 /* Info.plist */,
+				4D2D6A6E1FC6238C00705A80 /* Info.plist */,
 				E230A1141D03DB9E006181D8 /* Branch-SDK */,
 				E230A1671D03DB9E006181D8 /* Fabric */,
 				E298D0531C73D1B800589D22 /* Products */,
-				4D7CD8D81FC620D700A10F65 /* Branch copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -533,7 +532,7 @@
 			isa = PBXGroup;
 			children = (
 				E298D0521C73D1B800589D22 /* Branch.framework */,
-				4D7CD8D71FC620D600A10F65 /* Branch (tvOS).framework */,
+				4D7CD8D71FC620D600A10F65 /* Branch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -685,7 +684,7 @@
 			);
 			name = "Branch tvOS";
 			productName = "Branch iOS SDK Carthage";
-			productReference = 4D7CD8D71FC620D600A10F65 /* Branch (tvOS).framework */;
+			productReference = 4D7CD8D71FC620D600A10F65 /* Branch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E298D0511C73D1B800589D22 /* Branch */ = {
@@ -751,6 +750,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2D6A6F1FC6238C00705A80 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,10 +884,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				INFOPLIST_FILE = "Branch copy-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.branch.ios-carthage";
-				PRODUCT_NAME = "Branch (tvOS)";
 				SDKROOT = appletvos11.1;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 			};
 			name = Debug;
 		};
@@ -895,10 +894,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				INFOPLIST_FILE = "Branch copy-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.branch.ios-carthage";
-				PRODUCT_NAME = "Branch (tvOS)";
 				SDKROOT = appletvos11.1;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 			};
 			name = Release;
 		};
@@ -962,6 +960,7 @@
 				PRODUCT_NAME = Branch;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1021,6 +1020,7 @@
 				PRODUCT_NAME = Branch;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1033,7 +1033,6 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.branch.ios-carthage";
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -1042,7 +1041,6 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.branch.ios-carthage";
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};

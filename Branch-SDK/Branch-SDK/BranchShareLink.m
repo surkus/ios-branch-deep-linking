@@ -14,6 +14,8 @@
 #import "BNCAvailability.h"
 #import "BNCLog.h"
 #import "Branch.h"
+
+#if !TARGET_OS_TV
 @class BranchShareActivityItem;
 
 typedef NS_ENUM(NSInteger, BranchShareActivityItemType) {
@@ -281,3 +283,5 @@ typedef NS_ENUM(NSInteger, BranchShareActivityItemType) {
 }
 
 @end
+
+#endif // !TARGET_OS_TV

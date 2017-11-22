@@ -19,8 +19,9 @@
 #pragma mark BNCStrongMatchHelper iOS 8.0
 
 
-// This is a stub the class for older Xcode versions. These methods don't do anything.
-#if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED < 90000 // iOS < 9.0
+// This is a stub the class for older Xcode versions. These methods don't do anything. // iOS < 9.0
+#if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED < 90000) || TARGET_OS_TV
+
 
 @implementation BNCStrongMatchHelper
 
