@@ -1,4 +1,0 @@
-OCMock 3.4.1 - 04-Nov-2017
-Copyright © 2004-2017 by Erik Dörnenburg
-http://ocmock.org/
-https://github.com/erikdoe/ocmock
