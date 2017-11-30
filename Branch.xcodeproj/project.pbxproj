@@ -496,8 +496,7 @@
 			children = (
 				4D3122091FD089F900185D87 /* UnitTests */,
 			);
-			name = Tests;
-			path = "New Group";
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		4DAB17701EE8A31B0079EEB4 /* Networking */ = {
