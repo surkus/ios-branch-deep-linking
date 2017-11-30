@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>Branch</string>
+	<key>CFBundleName</key>
+	<string>Branch</string>
+	<key>CFBundleExecutable</key>
+	<string>Branch</string>
+	<key>NSPrincipalClass</key>
+	<string>Branch</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.branch.sdk.ios</string>
+	<key>CFBundleGetInfoString</key>
+	<string>The Branch iOS SDK Framework</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.21.13</string>
+	<key>CFBundleVersion</key>
+	<string>0.21.13</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2017 Branch Metrics. All rights reserved.</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+</dict>
+</plist>
