@@ -3,4 +3,3 @@
 //
 
 #import "BNCTestCase.h"
-#import "Branch.h"

@@ -6,21 +6,16 @@
 //  Copyright (c) 2015 Branch Metrics. All rights reserved.
 //
 
-
-#import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
-#import <libkern/OSAtomic.h>
+#import "BNCTestCase.h"
 #import "Branch.h"
 #import "BNCPreferenceHelper.h"
 #import "BNCServerInterface.h"
 #import "BNCEncodingUtils.h"
 #import "BNCServerRequestQueue.h"
-#import "BNCTestCase.h"
-
+#import <stdatomic.h>
 
 @interface BranchSDKLoadTests : BNCTestCase
 @end
-
 
 @implementation BranchSDKLoadTests
 
@@ -91,7 +86,7 @@
     // Fake branch key
     Branch.branchKey = @"key_live_foo";
 
-    __block int32_t completedCount = 0;
+    __block _Atomic(int32_t) completedCount = 0;
     for (int i = 0; i < 1000; i++) {
         [branch getShortURLWithParams:nil
             andChannel:[NSString stringWithFormat:@"%d", i]
@@ -99,7 +94,7 @@
             andCallback:^(NSString *url, NSError *error) {
                 XCTAssertNil(error);
                 XCTAssertNotNil(url);
-                OSAtomicIncrement32(&completedCount);
+                atomic_fetch_add(&completedCount, 1);
         }];
     }
 
@@ -124,4 +119,3 @@
 }
 
 @end
-

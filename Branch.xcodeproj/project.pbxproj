@@ -105,7 +105,6 @@
 		4D3122601FD08AE800185D87 /* BNCLocalization.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122161FD08A9B00185D87 /* BNCLocalization.Test.m */; };
 		4D3122611FD08AE800185D87 /* BNCLog.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122241FD08A9F00185D87 /* BNCLog.Test.m */; };
 		4D3122621FD08AE800185D87 /* BNCPreferenceHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122331FD08AA600185D87 /* BNCPreferenceHelperTests.m */; };
-		4D3122631FD08AE800185D87 /* BNCServerInterface.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122341FD08AA600185D87 /* BNCServerInterface.Test.m */; };
 		4D3122641FD08AE800185D87 /* BNCServerRequestQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221F1FD08A9D00185D87 /* BNCServerRequestQueueTests.m */; };
 		4D3122651FD08AE800185D87 /* BNCSystemObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122251FD08A9F00185D87 /* BNCSystemObserverTests.m */; };
 		4D3122661FD08AE800185D87 /* BNCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122191FD08A9C00185D87 /* BNCTestCase.m */; };
@@ -129,7 +128,6 @@
 		4D3122791FD08AE800185D87 /* BranchUserCompletedActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122171FD08A9B00185D87 /* BranchUserCompletedActionTests.m */; };
 		4D31227A1FD08AE800185D87 /* NSString+Branch.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221B1FD08A9C00185D87 /* NSString+Branch.Test.m */; };
 		4D8A35361FD0BAA7003BE9EC /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35351FD0BAA7003BE9EC /* OCMock.framework */; };
-		4D8A35381FD0BAC5003BE9EC /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35371FD0BAC5003BE9EC /* OHHTTPStubs.framework */; };
 		4DAB179D1EE8A31B0079EEB4 /* BNCNetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17711EE8A31B0079EEB4 /* BNCNetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DAB179E1EE8A31B0079EEB4 /* BNCNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB17721EE8A31B0079EEB4 /* BNCNetworkService.m */; };
 		4DAB179F1EE8A31B0079EEB4 /* BNCNetworkServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17731EE8A31B0079EEB4 /* BNCNetworkServiceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -205,6 +203,8 @@
 		4DB3920C1FD0950F008D0EB4 /* BranchUserCompletedActionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17951EE8A31B0079EEB4 /* BranchUserCompletedActionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB3920D1FD0950F008D0EB4 /* NSMutableDictionary+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D291AA91E322ECC007ED118 /* NSMutableDictionary+Branch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB3920E1FD0950F008D0EB4 /* NSString+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7C3E31F27CF68003696AF /* NSString+Branch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DB4A5B01FD0EEA800C93318 /* BranchEvent.Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221C1FD08A9C00185D87 /* BranchEvent.Test.swift */; };
+		4DB4A5B11FD1D5DB00C93318 /* OCMock.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4DB4A5AC1FD0CC9300C93318 /* OCMock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,7 +263,7 @@
 		4D31221B1FD08A9C00185D87 /* NSString+Branch.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Branch.Test.m"; sourceTree = "<group>"; };
 		4D31221C1FD08A9C00185D87 /* BranchEvent.Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchEvent.Test.swift; sourceTree = "<group>"; };
 		4D31221D1FD08A9D00185D87 /* BranchSetIdentityRequestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchSetIdentityRequestTests.m; sourceTree = "<group>"; };
-		4D31221E1FD08A9D00185D87 /* Branch-SDK-Tests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Branch-SDK-Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D31221E1FD08A9D00185D87 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		4D31221F1FD08A9D00185D87 /* BNCServerRequestQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCServerRequestQueueTests.m; sourceTree = "<group>"; };
 		4D3122201FD08A9E00185D87 /* BranchSDKLoadTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchSDKLoadTests.m; sourceTree = "<group>"; };
 		4D3122211FD08A9E00185D87 /* BNCError.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCError.Test.m; sourceTree = "<group>"; };
@@ -340,6 +340,7 @@
 		4DB328021FA10C6200ACF9B0 /* BNCFieldDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCFieldDefines.h; sourceTree = "<group>"; };
 		4DB328031FA10C6200ACF9B0 /* BranchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchEvent.h; sourceTree = "<group>"; };
 		4DB328041FA10C6300ACF9B0 /* BranchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchEvent.m; sourceTree = "<group>"; };
+		4DB4A5AC1FD0CC9300C93318 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = "Vendor/OCMock/iOS framework/OCMock.framework"; sourceTree = "<group>"; };
 		4DB567381E79FDAF00A8A324 /* BranchShareLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchShareLink.h; sourceTree = "<group>"; };
 		4DB567391E79FDAF00A8A324 /* BranchShareLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchShareLink.m; sourceTree = "<group>"; };
 		7DA3BF171D889CE500CA8AE0 /* BranchContentDiscoverer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchContentDiscoverer.m; sourceTree = "<group>"; };
@@ -403,7 +404,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D31220D1FD089F900185D87 /* Branch.framework in Frameworks */,
-				4D8A35381FD0BAC5003BE9EC /* OHHTTPStubs.framework in Frameworks */,
 				4D8A35361FD0BAA7003BE9EC /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +456,7 @@
 				4D3122251FD08A9F00185D87 /* BNCSystemObserverTests.m */,
 				4D31221A1FD08A9C00185D87 /* BNCTestCase.h */,
 				4D3122191FD08A9C00185D87 /* BNCTestCase.m */,
-				4D31221E1FD08A9D00185D87 /* Branch-SDK-Tests-Bridging-Header.h */,
+				4D31221E1FD08A9D00185D87 /* Bridging-Header.h */,
 				4D3122311FD08AA500185D87 /* Branch-SDK-Tests.strings */,
 				4D3122271FD08AA000185D87 /* BranchCloseRequestTests.m */,
 				4D31222C1FD08AA200185D87 /* BranchDelegate.Test.m */,
@@ -495,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3122091FD089F900185D87 /* UnitTests */,
+				4DB4A5AC1FD0CC9300C93318 /* OCMock.framework */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -825,6 +826,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB4A5B11FD1D5DB00C93318 /* OCMock.framework in Resources */,
 				4D3122671FD08AE800185D87 /* Branch-SDK-Tests.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -918,6 +920,7 @@
 				4D31225A1FD08AE800185D87 /* BNCCrashlyticsWrapper.Test.m in Sources */,
 				4D31226D1FD08AE800185D87 /* BranchInstallRequestTests.m in Sources */,
 				4D31225D1FD08AE800185D87 /* BNCEncodingUtils.Test.m in Sources */,
+				4DB4A5B01FD0EEA800C93318 /* BranchEvent.Test.swift in Sources */,
 				4D3122691FD08AE800185D87 /* BranchDelegate.Test.m in Sources */,
 				4D31227A1FD08AE800185D87 /* NSString+Branch.Test.m in Sources */,
 				4D3122681FD08AE800185D87 /* BranchCloseRequestTests.m in Sources */,
@@ -928,7 +931,6 @@
 				4D3122621FD08AE800185D87 /* BNCPreferenceHelperTests.m in Sources */,
 				4D3122741FD08AE800185D87 /* BranchSDKLoadTests.m in Sources */,
 				4D31226A1FD08AE800185D87 /* BranchEvent.Test.m in Sources */,
-				4D3122631FD08AE800185D87 /* BNCServerInterface.Test.m in Sources */,
 				4D3122601FD08AE800185D87 /* BNCLocalization.Test.m in Sources */,
 				4D31225F1FD08AE800185D87 /* BNCLinkDataTests.m in Sources */,
 				4D3122771FD08AE800185D87 /* BranchShortUrlSyncRequestTests.m in Sources */,
@@ -1037,7 +1039,6 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1047,12 +1048,12 @@
 					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
 					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
 				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1062,7 +1063,6 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1072,12 +1072,12 @@
 					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
 					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
 				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1087,8 +1087,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1116,7 +1114,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1151,8 +1149,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1180,7 +1176,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
