@@ -332,7 +332,6 @@
 		4D3922BC1E1F0C85004FB7C8 /* BNCCommerceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCCommerceEvent.h; sourceTree = "<group>"; };
 		4D3FA94C1DFF3F6C00E2B6A9 /* BNCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCConfig.m; sourceTree = "<group>"; };
 		4D4874A81FD22E1900B09DEF /* BranchLibUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BranchLibUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D4874A91FD22E1900B09DEF /* BranchUnitTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "BranchUnitTests copy-Info.plist"; path = "/Users/esmith/Documents/Development/BranchMetrics/ios-branch-deep-linking/BranchUnitTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		4D4874BF1FD22F5500B09DEF /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		4D510D701F0D6014003D720B /* BNCDeepLinkViewControllerInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCDeepLinkViewControllerInstance.h; sourceTree = "<group>"; };
 		4D510D711F0D6014003D720B /* BNCDeepLinkViewControllerInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCDeepLinkViewControllerInstance.m; sourceTree = "<group>"; };
@@ -509,7 +508,6 @@
 				4D3122251FD08A9F00185D87 /* BNCSystemObserverTests.m */,
 				4D31221A1FD08A9C00185D87 /* BNCTestCase.h */,
 				4D3122191FD08A9C00185D87 /* BNCTestCase.m */,
-				4D31221E1FD08A9D00185D87 /* Bridging-Header.h */,
 				4D3122311FD08AA500185D87 /* Branch-SDK-Tests.strings */,
 				4D3122271FD08AA000185D87 /* BranchCloseRequestTests.m */,
 				4D31222C1FD08AA200185D87 /* BranchDelegate.Test.m */,
@@ -529,6 +527,7 @@
 				4D3122221FD08A9E00185D87 /* BranchShortUrlSyncRequestTests.m */,
 				4D3122281FD08AA100185D87 /* BranchUniversalObject.Test.m */,
 				4D3122171FD08A9B00185D87 /* BranchUserCompletedActionTests.m */,
+				4D31221E1FD08A9D00185D87 /* Bridging-Header.h */,
 				4D31220C1FD089F900185D87 /* Info.plist */,
 				4D31221B1FD08A9C00185D87 /* NSString+Branch.Test.m */,
 			);
@@ -719,7 +718,6 @@
 				4D8A353B1FD0BD96003BE9EC /* Tests */,
 				E298D0531C73D1B800589D22 /* Products */,
 				4D8A35341FD0BAA7003BE9EC /* Frameworks */,
-				4D4874A91FD22E1900B09DEF /* BranchUnitTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -737,6 +735,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2B767FAB1FD8A53200788317 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E298D04F1C73D1B800589D22 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -811,6 +816,7 @@
 				4D31219D1FD0868A00185D87 /* Sources */,
 				4D31219E1FD0868A00185D87 /* Frameworks */,
 				4D31219F1FD0868A00185D87 /* CopyFiles */,
+				2B767FAB1FD8A53200788317 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1205,7 +1211,6 @@
 					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1229,7 +1234,6 @@
 					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1252,8 +1256,7 @@
 					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
 					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
 				);
-				INFOPLIST_FILE = "BranchUnitTests copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1276,8 +1279,7 @@
 					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
 					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
 				);
-				INFOPLIST_FILE = "BranchUnitTests copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1341,7 +1343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1398,7 +1400,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
