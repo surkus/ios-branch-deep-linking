@@ -6,13 +6,9 @@
 //  Copyright (c) 2015 Branch Metrics. All rights reserved.
 //
 
-
-#import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
 #import "BNCTestCase.h"
 #import "BNCSystemObserver.h"
 #import "BNCPreferenceHelper.h"
-
 
 @interface BNCSystemObserver (Testing)
 
@@ -28,7 +24,6 @@
 
 @interface BNCSystemObserverTests : BNCTestCase
 @end
-
 
 @implementation BNCSystemObserverTests
 

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B153F631FDA18F700CDA282 /* BNCServerInterface.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122341FD08AA600185D87 /* BNCServerInterface.Test.m */; };
+		2B153F641FDA18F700CDA282 /* BNCServerInterface.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122341FD08AA600185D87 /* BNCServerInterface.Test.m */; };
+		2B153F651FDA194500CDA282 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35371FD0BAC5003BE9EC /* OHHTTPStubs.framework */; };
+		2B153F671FDA197100CDA282 /* OHHTTPStubs.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */; };
+		2B153F6A1FDA1F2800CDA282 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */; };
+		2B153F6B1FDA1F4C00CDA282 /* OHHTTPStubs.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */; };
 		4D3121AC1FD088B200185D87 /* BNCAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1ED27B1FB3A439007390A8 /* BNCAvailability.m */; };
 		4D3121AD1FD088B200185D87 /* BNCCommerceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA40A8D1E1F0011004D2534 /* BNCCommerceEvent.m */; };
 		4D3121AE1FD088B200185D87 /* BNCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FA94C1DFF3F6C00E2B6A9 /* BNCConfig.m */; };
@@ -272,6 +278,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = AliSoftware/OHHTTPStubs/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		2BD7C3D71F27CEDB003696AF /* BNCDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCDebug.h; sourceTree = "<group>"; };
 		2BD7C3D81F27CEDB003696AF /* BNCDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCDebug.m; sourceTree = "<group>"; };
 		2BD7C3D91F27CEDB003696AF /* BNCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCLog.h; sourceTree = "<group>"; };
@@ -448,6 +455,7 @@
 			files = (
 				4D4875DB1FD2306600B09DEF /* Branch.framework in Frameworks */,
 				4D8A35361FD0BAA7003BE9EC /* OCMock.framework in Frameworks */,
+				2B153F651FDA194500CDA282 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +465,7 @@
 			files = (
 				4D4874AC1FD22EE200B09DEF /* libBranchLib.a in Frameworks */,
 				4D4874A11FD22E1900B09DEF /* OCMock.framework in Frameworks */,
+				2B153F6A1FDA1F2800CDA282 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +546,7 @@
 		4D4874AD1FD22F5500B09DEF /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */,
 				4D4874BD1FD22F5500B09DEF /* OCMock */,
 			);
 			path = Vendor;
@@ -934,8 +944,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D4875DA1FD2304B00B09DEF /* OCMock.framework in Resources */,
 				4D3122671FD08AE800185D87 /* Branch-SDK-Tests.strings in Resources */,
+				4D4875DA1FD2304B00B09DEF /* OCMock.framework in Resources */,
+				2B153F671FDA197100CDA282 /* OHHTTPStubs.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,8 +954,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D4875D91FD2301F00B09DEF /* OCMock.framework in Resources */,
 				4D4874A41FD22E1900B09DEF /* Branch-SDK-Tests.strings in Resources */,
+				4D4875D91FD2301F00B09DEF /* OCMock.framework in Resources */,
+				2B153F6B1FDA1F4C00CDA282 /* OHHTTPStubs.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,6 +1063,7 @@
 				4D3122601FD08AE800185D87 /* BNCLocalization.Test.m in Sources */,
 				4D31225F1FD08AE800185D87 /* BNCLinkDataTests.m in Sources */,
 				4D3122771FD08AE800185D87 /* BranchShortUrlSyncRequestTests.m in Sources */,
+				2B153F631FDA18F700CDA282 /* BNCServerInterface.Test.m in Sources */,
 				4D3122641FD08AE800185D87 /* BNCServerRequestQueueTests.m in Sources */,
 				4D3122731FD08AE800185D87 /* BranchSDKFunctionalityTests.m in Sources */,
 			);
@@ -1089,6 +1102,7 @@
 				4D48749B1FD22E1900B09DEF /* BNCLocalization.Test.m in Sources */,
 				4D48749C1FD22E1900B09DEF /* BNCLinkDataTests.m in Sources */,
 				4D48749D1FD22E1900B09DEF /* BranchShortUrlSyncRequestTests.m in Sources */,
+				2B153F641FDA18F700CDA282 /* BNCServerInterface.Test.m in Sources */,
 				4D48749E1FD22E1900B09DEF /* BNCServerRequestQueueTests.m in Sources */,
 				4D48749F1FD22E1900B09DEF /* BranchSDKFunctionalityTests.m in Sources */,
 			);
@@ -1207,8 +1221,7 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
-					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
+					"$(PROJECT_DIR)/Tests/Vendor/**",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
@@ -1230,8 +1243,7 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
-					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
+					"$(PROJECT_DIR)/Tests/Vendor/**",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
@@ -1253,8 +1265,7 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
-					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
+					"$(PROJECT_DIR)/Tests/Vendor/**",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
@@ -1276,8 +1287,7 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework/**",
-					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS/**",
+					"$(PROJECT_DIR)/Tests/Vendor/**",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
@@ -1414,7 +1424,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS",
+				);
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -1432,7 +1445,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS",
+				);
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
