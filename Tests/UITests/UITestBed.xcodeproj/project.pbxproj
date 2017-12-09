@@ -14,9 +14,9 @@
 		4D2AF3521EF9B3BF00220F4A /* TBWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2AF3501EF9B3BF00220F4A /* TBWaitingView.m */; };
 		4D2AF3531EF9B3BF00220F4A /* TBWaitingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2AF3511EF9B3BF00220F4A /* TBWaitingView.xib */; };
 		4D5A167F1FBE754F009BECE4 /* UIViewController+Branch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A167E1FBE754F009BECE4 /* UIViewController+Branch.m */; };
-		4D5ACEF21FB382130099A56F /* Branch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5ACEF11FB382050099A56F /* Branch.framework */; };
-		4D5ACEF31FB382130099A56F /* Branch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5ACEF11FB382050099A56F /* Branch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4D9AF2D81F7589CC0065EF11 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9AF2D61F7589CC0065EF11 /* Launch Screen.storyboard */; };
+		4DA9ABFA1FDB6F690036E071 /* Branch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA9ABF31FDB6F3D0036E071 /* Branch.framework */; };
+		4DA9ABFB1FDB6F690036E071 /* Branch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA9ABF31FDB6F3D0036E071 /* Branch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4DFF2B6E1EEF3B150043F840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF2B6D1EEF3B150043F840 /* main.m */; };
 		4DFF2B711EEF3B150043F840 /* TBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF2B701EEF3B150043F840 /* TBAppDelegate.m */; };
 		4DFF2B741EEF3B150043F840 /* TBBranchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF2B731EEF3B150043F840 /* TBBranchViewController.m */; };
@@ -25,16 +25,37 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4D5ACEF01FB382050099A56F /* PBXContainerItemProxy */ = {
+		4DA9ABF21FDB6F3D0036E071 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4D5ACEEC1FB382040099A56F /* BranchSDK.xcodeproj */;
+			containerPortal = 4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E298D0521C73D1B800589D22;
 			remoteInfo = Branch;
 		};
-		4D5ACEF41FB382130099A56F /* PBXContainerItemProxy */ = {
+		4DA9ABF41FDB6F3D0036E071 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4D5ACEEC1FB382040099A56F /* BranchSDK.xcodeproj */;
+			containerPortal = 4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D3122081FD089F900185D87;
+			remoteInfo = BranchUnitTests;
+		};
+		4DA9ABF61FDB6F3D0036E071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D3121A11FD0868A00185D87;
+			remoteInfo = BranchLib;
+		};
+		4DA9ABF81FDB6F3D0036E071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4D4874A81FD22E1900B09DEF;
+			remoteInfo = BranchLibUnitTests;
+		};
+		4DA9ABFC1FDB6F690036E071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = E298D0511C73D1B800589D22;
 			remoteInfo = Branch;
@@ -48,7 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4D5ACEF31FB382130099A56F /* Branch.framework in Embed Frameworks */,
+				4DA9ABFB1FDB6F690036E071 /* Branch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,8 +87,8 @@
 		4D2AF3511EF9B3BF00220F4A /* TBWaitingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBWaitingView.xib; sourceTree = "<group>"; };
 		4D5A167D1FBE754F009BECE4 /* UIViewController+Branch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Branch.h"; sourceTree = "<group>"; };
 		4D5A167E1FBE754F009BECE4 /* UIViewController+Branch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Branch.m"; sourceTree = "<group>"; };
-		4D5ACEEC1FB382040099A56F /* BranchSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BranchSDK.xcodeproj; path = "../../carthage-files/BranchSDK.xcodeproj"; sourceTree = "<group>"; };
 		4D9AF2D71F7589CC0065EF11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Branch.xcodeproj; path = ../../Branch.xcodeproj; sourceTree = "<group>"; };
 		4DFF2B691EEF3B150043F840 /* UITestBed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestBed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFF2B6D1EEF3B150043F840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DFF2B6F1EEF3B150043F840 /* TBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBAppDelegate.h; sourceTree = "<group>"; };
@@ -85,17 +106,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5ACEF21FB382130099A56F /* Branch.framework in Frameworks */,
+				4DA9ABFA1FDB6F690036E071 /* Branch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D5ACEED1FB382040099A56F /* Products */ = {
+		4DA9ABEC1FDB6F3D0036E071 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D5ACEF11FB382050099A56F /* Branch.framework */,
+				4DA9ABF31FDB6F3D0036E071 /* Branch.framework */,
+				4DA9ABF51FDB6F3D0036E071 /* BranchUnitTests.xctest */,
+				4DA9ABF71FDB6F3D0036E071 /* libBranchLib.a */,
+				4DA9ABF91FDB6F3D0036E071 /* BranchLibUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +127,7 @@
 		4DFF2B601EEF3B150043F840 = {
 			isa = PBXGroup;
 			children = (
-				4D5ACEEC1FB382040099A56F /* BranchSDK.xcodeproj */,
+				4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */,
 				4DFF2B6B1EEF3B150043F840 /* UITestBed */,
 				4DFF2B6A1EEF3B150043F840 /* Products */,
 			);
@@ -167,7 +191,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4D5ACEF51FB382130099A56F /* PBXTargetDependency */,
+				4DA9ABFD1FDB6F690036E071 /* PBXTargetDependency */,
 			);
 			name = UITestBed;
 			productName = "Testbed-ObjC";
@@ -204,8 +228,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4D5ACEED1FB382040099A56F /* Products */;
-					ProjectRef = 4D5ACEEC1FB382040099A56F /* BranchSDK.xcodeproj */;
+					ProductGroup = 4DA9ABEC1FDB6F3D0036E071 /* Products */;
+					ProjectRef = 4DA9ABEB1FDB6F3D0036E071 /* Branch.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -216,11 +240,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4D5ACEF11FB382050099A56F /* Branch.framework */ = {
+		4DA9ABF31FDB6F3D0036E071 /* Branch.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Branch.framework;
-			remoteRef = 4D5ACEF01FB382050099A56F /* PBXContainerItemProxy */;
+			remoteRef = 4DA9ABF21FDB6F3D0036E071 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DA9ABF51FDB6F3D0036E071 /* BranchUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BranchUnitTests.xctest;
+			remoteRef = 4DA9ABF41FDB6F3D0036E071 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DA9ABF71FDB6F3D0036E071 /* libBranchLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBranchLib.a;
+			remoteRef = 4DA9ABF61FDB6F3D0036E071 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4DA9ABF91FDB6F3D0036E071 /* BranchLibUnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BranchLibUnitTests.xctest;
+			remoteRef = 4DA9ABF81FDB6F3D0036E071 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -259,10 +304,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4D5ACEF51FB382130099A56F /* PBXTargetDependency */ = {
+		4DA9ABFD1FDB6F690036E071 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Branch;
-			targetProxy = 4D5ACEF41FB382130099A56F /* PBXContainerItemProxy */;
+			targetProxy = 4DA9ABFC1FDB6F690036E071 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -333,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = " ../../Branch-SDK/Branch-SDK/**";
+				HEADER_SEARCH_PATHS = "../../Branch/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -383,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = " ../../Branch-SDK/Branch-SDK/**";
+				HEADER_SEARCH_PATHS = "../../Branch/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -399,7 +444,7 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				INFOPLIST_FILE = "$(SRCROOT)/UITestBed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.Testbed-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "-io.branch.Testbed-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -411,7 +456,7 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				INFOPLIST_FILE = "$(SRCROOT)/UITestBed/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.branch.Testbed-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "-io.branch.Testbed-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
