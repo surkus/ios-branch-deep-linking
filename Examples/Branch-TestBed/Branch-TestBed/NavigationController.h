@@ -6,7 +6,7 @@
 //  Copyright © 2016 Branch Metrics. All rights reserved.
 //
 
-#import "Branch.h"
+#import <Branch/Branch.h>
 
 @interface NavigationController : UINavigationController <BranchDeepLinkingController>
 @end

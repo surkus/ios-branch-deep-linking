@@ -215,7 +215,7 @@
 		4DB391EE1FD0950F008D0EB4 /* BNCDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7C3D71F27CEDB003696AF /* BNCDebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB391EF1FD0950F008D0EB4 /* BNCDeepLinkViewControllerInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D510D701F0D6014003D720B /* BNCDeepLinkViewControllerInstance.h */; };
 		4DB391F01FD0950F008D0EB4 /* BNCDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E230A1181D03DB9E006181D8 /* BNCDeviceInfo.h */; };
-		4DB391F11FD0950F008D0EB4 /* BNCEncodingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E230A11A1D03DB9E006181D8 /* BNCEncodingUtils.h */; };
+		4DB391F11FD0950F008D0EB4 /* BNCEncodingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E230A11A1D03DB9E006181D8 /* BNCEncodingUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB391F21FD0950F008D0EB4 /* BNCError.h in Headers */ = {isa = PBXBuildFile; fileRef = E230A11C1D03DB9E006181D8 /* BNCError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB391F31FD0950F008D0EB4 /* BNCFabricAnswers.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B9477C1D15E3C100F2270D /* BNCFabricAnswers.h */; };
 		4DB391F41FD0950F008D0EB4 /* BNCFieldDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB328021FA10C6200ACF9B0 /* BNCFieldDefines.h */; };
@@ -789,12 +789,12 @@
 				4DB391F61FD0950F008D0EB4 /* BNCLinkData.h in Headers */,
 				4DB391F81FD0950F008D0EB4 /* BNCLog.h in Headers */,
 				4DB391F21FD0950F008D0EB4 /* BNCError.h in Headers */,
+				4DB391F11FD0950F008D0EB4 /* BNCEncodingUtils.h in Headers */,
 				4DAB179D1EE8A31B0079EEB4 /* BNCNetworkService.h in Headers */,
 				4DB391EC1FD0950F008D0EB4 /* BNCContentDiscoveryManager.h in Headers */,
 				4DB391ED1FD0950F008D0EB4 /* BNCCrashlyticsWrapper.h in Headers */,
 				4DB391EF1FD0950F008D0EB4 /* BNCDeepLinkViewControllerInstance.h in Headers */,
 				4DB391F01FD0950F008D0EB4 /* BNCDeviceInfo.h in Headers */,
-				4DB391F11FD0950F008D0EB4 /* BNCEncodingUtils.h in Headers */,
 				4DB391F31FD0950F008D0EB4 /* BNCFabricAnswers.h in Headers */,
 				4DB391F41FD0950F008D0EB4 /* BNCFieldDefines.h in Headers */,
 				4DB391F71FD0950F008D0EB4 /* BNCLocalization.h in Headers */,
@@ -1424,10 +1424,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -1445,10 +1442,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/AliSoftware/OHHTTPStubs/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";

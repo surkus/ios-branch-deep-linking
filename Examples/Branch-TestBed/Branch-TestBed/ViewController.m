@@ -6,13 +6,11 @@
 //  Copyright (c) 2014 Branch Metrics. All rights reserved.
 //
 
-#import "Branch.h"
+#import <Branch/Branch.h>
 #import "ViewController.h"
 #import "CreditHistoryViewController.h"
 #import "LogOutputViewController.h"
 #import "ArrayPickerView.h"
-#import "BranchUniversalObject.h"
-#import "BranchLinkProperties.h"
 
 static NSString *cononicalIdentifier = @"item/12346";
 static NSString *canonicalUrl = @"https://dev.branch.io/getting-started/deep-link-routing/guide/ios/";

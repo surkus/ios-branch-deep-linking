@@ -38,6 +38,7 @@
 
 // Headers included for the bridging module header:
 
+#import "BNCEncodingUtils.h"
 #import "BNCNetworkService.h"
 #import "BranchContentDiscoverer.h"
 #import "BranchContentDiscoveryManifest.h"
