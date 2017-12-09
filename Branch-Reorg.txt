@@ -1,0 +1,12 @@
+Branch SDK Project Reorg Steps
+==============================
+Steps to avoid losing history. Need to commit between each step.
+
+git mv Branch-SDK/Branch-SDK  Branch
+git mv Branch-SDK/Fabric  Vendor/Fabric
+git mv Branch-TestBed/Branch-SDK-Tests  Tests/UnitTests
+git mv Branch-TestBed/Branch-TestBed-UITests  Tests/UITests
+git mv Branch-TestBed  Examples/Branch-TestBed
+git mv Branch-TestBed-iMessage  Examples/Branch-TestBed-iMessage
+git mv Branch-TestBed-Swift  Examples/Branch-TestBed-Swift
+git mv Branch-TestBed-Xcode-7  Examples/Branch-TestBed-Xcode-7
