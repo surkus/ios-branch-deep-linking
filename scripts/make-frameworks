@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+
+scriptname=$(basename "${BASH_SOURCE[0]}")
+scriptpath="${BASH_SOURCE[0]}"
+scriptpath=$(cd "$(dirname "${scriptpath}")" && pwd)
+cd ${scriptpath}
+
+framework-make-fat  Branch.xcodeproj  "Branch Static"   Frameworks/"Branch Static"
+framework-make-fat  Branch.xcodeproj  "Branch iOS"      Frameworks/"Branch iOS"
+framework-make-fat  Branch.xcodeproj  "Branch tvOS"     Frameworks/"Branch tvOS"
+

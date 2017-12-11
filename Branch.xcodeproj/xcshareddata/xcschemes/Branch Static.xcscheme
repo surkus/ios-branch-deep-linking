@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D3121A01FD0868A00185D87"
-               BuildableName = "libBranchLib.a"
-               BlueprintName = "BranchLib"
+               BuildableName = "libBranch.a"
+               BlueprintName = "Branch Static"
                ReferencedContainer = "container:Branch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D48747D1FD22E1900B09DEF"
-               BuildableName = "BranchLibUnitTests.xctest"
-               BlueprintName = "BranchLibUnitTests"
+               BuildableName = "Branch Static Tests.xctest"
+               BlueprintName = "Branch Static Tests"
                ReferencedContainer = "container:Branch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D48747D1FD22E1900B09DEF"
-               BuildableName = "BranchLibUnitTests.xctest"
-               BlueprintName = "BranchLibUnitTests"
+               BuildableName = "Branch Static Tests.xctest"
+               BlueprintName = "Branch Static Tests"
                ReferencedContainer = "container:Branch.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D3121A01FD0868A00185D87"
-            BuildableName = "libBranchLib.a"
-            BlueprintName = "BranchLib"
+            BuildableName = "libBranch.a"
+            BlueprintName = "Branch Static"
             ReferencedContainer = "container:Branch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -89,8 +89,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D3121A01FD0868A00185D87"
-            BuildableName = "libBranchLib.a"
-            BlueprintName = "BranchLib"
+            BuildableName = "libBranch.a"
+            BlueprintName = "Branch Static"
             ReferencedContainer = "container:Branch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -107,8 +107,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D3121A01FD0868A00185D87"
-            BuildableName = "libBranchLib.a"
-            BlueprintName = "BranchLib"
+            BuildableName = "libBranch.a"
+            BlueprintName = "Branch Static"
             ReferencedContainer = "container:Branch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

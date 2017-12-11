@@ -2,7 +2,7 @@
 //  BranchEvent.Test.swift
 //  Branch-SDK-Tests
 //
-//  Created by edward on 10/9/17.
+//  Created by Edward Smith on 10/9/17.
 //  Copyright © 2017 Branch, Inc. All rights reserved.
 //
 

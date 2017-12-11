@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E298D0511C73D1B800589D22"
                BuildableName = "Branch.framework"
-               BlueprintName = "Branch"
+               BlueprintName = "Branch iOS"
                ReferencedContainer = "container:Branch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D3122071FD089F900185D87"
-               BuildableName = "BranchUnitTests.xctest"
-               BlueprintName = "BranchUnitTests"
+               BuildableName = "Branch iOS Tests.xctest"
+               BlueprintName = "Branch iOS Tests"
                ReferencedContainer = "container:Branch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D3122071FD089F900185D87"
-               BuildableName = "BranchUnitTests.xctest"
-               BlueprintName = "BranchUnitTests"
+               BuildableName = "Branch iOS Tests.xctest"
+               BlueprintName = "Branch iOS Tests"
                ReferencedContainer = "container:Branch.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -62,7 +62,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E298D0511C73D1B800589D22"
             BuildableName = "Branch.framework"
-            BlueprintName = "Branch"
+            BlueprintName = "Branch iOS"
             ReferencedContainer = "container:Branch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -90,7 +90,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E298D0511C73D1B800589D22"
             BuildableName = "Branch.framework"
-            BlueprintName = "Branch"
+            BlueprintName = "Branch iOS"
             ReferencedContainer = "container:Branch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -108,7 +108,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E298D0511C73D1B800589D22"
             BuildableName = "Branch.framework"
-            BlueprintName = "Branch"
+            BlueprintName = "Branch iOS"
             ReferencedContainer = "container:Branch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

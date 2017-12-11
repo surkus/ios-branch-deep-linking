@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		2B153F631FDA18F700CDA282 /* BNCServerInterface.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122341FD08AA600185D87 /* BNCServerInterface.Test.m */; };
 		2B153F641FDA18F700CDA282 /* BNCServerInterface.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122341FD08AA600185D87 /* BNCServerInterface.Test.m */; };
-		2B153F651FDA194500CDA282 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35371FD0BAC5003BE9EC /* OHHTTPStubs.framework */; };
-		2B153F671FDA197100CDA282 /* OHHTTPStubs.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */; };
-		2B153F6A1FDA1F2800CDA282 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */; };
-		2B153F6B1FDA1F4C00CDA282 /* OHHTTPStubs.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B153F661FDA197000CDA282 /* OHHTTPStubs.framework */; };
+		4D2E68D51FDF2EB900A186A2 /* OHHTTPStubs.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4DB1F70F1FDF1F7C006DD441 /* OHHTTPStubs.framework */; };
+		4D2E68D71FDF32C400A186A2 /* OHHTTPStubs.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4DB1F70F1FDF1F7C006DD441 /* OHHTTPStubs.framework */; };
+		4D2E68D81FDF32EF00A186A2 /* Branch.framework in Resources */ = {isa = PBXBuildFile; fileRef = E298D0521C73D1B800589D22 /* Branch.framework */; };
 		4D3121AC1FD088B200185D87 /* BNCAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1ED27B1FB3A439007390A8 /* BNCAvailability.m */; };
 		4D3121AD1FD088B200185D87 /* BNCCommerceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA40A8D1E1F0011004D2534 /* BNCCommerceEvent.m */; };
 		4D3121AE1FD088B200185D87 /* BNCConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3FA94C1DFF3F6C00E2B6A9 /* BNCConfig.m */; };
@@ -132,6 +131,7 @@
 		4D3122781FD08AE800185D87 /* BranchUniversalObject.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122281FD08AA100185D87 /* BranchUniversalObject.Test.m */; };
 		4D3122791FD08AE800185D87 /* BranchUserCompletedActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122171FD08A9B00185D87 /* BranchUserCompletedActionTests.m */; };
 		4D31227A1FD08AE800185D87 /* NSString+Branch.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221B1FD08A9C00185D87 /* NSString+Branch.Test.m */; };
+		4D46C4DA1FDF361D00E82FE4 /* BranchEvent.Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221C1FD08A9C00185D87 /* BranchEvent.Test.swift */; };
 		4D4874811FD22E1900B09DEF /* BranchSetIdentityRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221D1FD08A9D00185D87 /* BranchSetIdentityRequestTests.m */; };
 		4D4874821FD22E1900B09DEF /* BNCTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122191FD08A9C00185D87 /* BNCTestCase.m */; };
 		4D4874831FD22E1900B09DEF /* BNCError.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122211FD08A9E00185D87 /* BNCError.Test.m */; };
@@ -163,13 +163,12 @@
 		4D48749D1FD22E1900B09DEF /* BranchShortUrlSyncRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122221FD08A9E00185D87 /* BranchShortUrlSyncRequestTests.m */; };
 		4D48749E1FD22E1900B09DEF /* BNCServerRequestQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221F1FD08A9D00185D87 /* BNCServerRequestQueueTests.m */; };
 		4D48749F1FD22E1900B09DEF /* BranchSDKFunctionalityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3122261FD08AA000185D87 /* BranchSDKFunctionalityTests.m */; };
-		4D4874A11FD22E1900B09DEF /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35351FD0BAA7003BE9EC /* OCMock.framework */; };
 		4D4874A41FD22E1900B09DEF /* Branch-SDK-Tests.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D3122311FD08AA500185D87 /* Branch-SDK-Tests.strings */; };
-		4D4874AC1FD22EE200B09DEF /* libBranchLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3121A11FD0868A00185D87 /* libBranchLib.a */; };
+		4D4874AC1FD22EE200B09DEF /* libBranch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3121A11FD0868A00185D87 /* libBranch.a */; };
 		4D4875D91FD2301F00B09DEF /* OCMock.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4D4874BF1FD22F5500B09DEF /* OCMock.framework */; };
 		4D4875DA1FD2304B00B09DEF /* OCMock.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4D4874BF1FD22F5500B09DEF /* OCMock.framework */; };
-		4D4875DB1FD2306600B09DEF /* Branch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E298D0521C73D1B800589D22 /* Branch.framework */; };
-		4D8A35361FD0BAA7003BE9EC /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35351FD0BAA7003BE9EC /* OCMock.framework */; };
+		4DA01AFB1FDF352D006328AC /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35351FD0BAA7003BE9EC /* OCMock.framework */; };
+		4DA01AFC1FDF358D006328AC /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB1F70F1FDF1F7C006DD441 /* OHHTTPStubs.framework */; };
 		4DAB179D1EE8A31B0079EEB4 /* BNCNetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17711EE8A31B0079EEB4 /* BNCNetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DAB179E1EE8A31B0079EEB4 /* BNCNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB17721EE8A31B0079EEB4 /* BNCNetworkService.m */; };
 		4DAB179F1EE8A31B0079EEB4 /* BNCNetworkServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17731EE8A31B0079EEB4 /* BNCNetworkServiceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -206,6 +205,9 @@
 		4DAB17BE1EE8A31B0079EEB4 /* BranchSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17931EE8A31B0079EEB4 /* BranchSpotlightUrlRequest.h */; };
 		4DAB17BF1EE8A31B0079EEB4 /* BranchSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB17941EE8A31B0079EEB4 /* BranchSpotlightUrlRequest.m */; };
 		4DAB17C11EE8A31B0079EEB4 /* BranchUserCompletedActionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB17961EE8A31B0079EEB4 /* BranchUserCompletedActionRequest.m */; };
+		4DB1F70D1FDF1DBC006DD441 /* Branch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E298D0521C73D1B800589D22 /* Branch.framework */; };
+		4DB1F70E1FDF1F09006DD441 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35351FD0BAA7003BE9EC /* OCMock.framework */; };
+		4DB1F7101FDF1F7C006DD441 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB1F70F1FDF1F7C006DD441 /* OHHTTPStubs.framework */; };
 		4DB391E81FD0950F008D0EB4 /* BNCAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1ED27C1FB3A439007390A8 /* BNCAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB391E91FD0950F008D0EB4 /* BNCCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B9477A1D15E31700F2270D /* BNCCallbacks.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB391EA1FD0950F008D0EB4 /* BNCCommerceEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D3922BC1E1F0C85004FB7C8 /* BNCCommerceEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -245,7 +247,6 @@
 		4DB3920C1FD0950F008D0EB4 /* BranchUserCompletedActionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17951EE8A31B0079EEB4 /* BranchUserCompletedActionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB3920D1FD0950F008D0EB4 /* NSMutableDictionary+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D291AA91E322ECC007ED118 /* NSMutableDictionary+Branch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB3920E1FD0950F008D0EB4 /* NSString+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7C3E31F27CF68003696AF /* NSString+Branch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DB4A5B01FD0EEA800C93318 /* BranchEvent.Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31221C1FD08A9C00185D87 /* BranchEvent.Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,8 +299,8 @@
 		4D3121971FCF80B700185D87 /* Fabric+FABKits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fabric+FABKits.h"; sourceTree = "<group>"; };
 		4D3121981FCF80B700185D87 /* Fabric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fabric.h; sourceTree = "<group>"; };
 		4D3121991FCFE31D00185D87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D3121A11FD0868A00185D87 /* libBranchLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBranchLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D3122081FD089F900185D87 /* BranchUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BranchUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3121A11FD0868A00185D87 /* libBranch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBranch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D3122081FD089F900185D87 /* Branch iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Branch iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D31220C1FD089F900185D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3122131FD08A9B00185D87 /* BranchShortUrlRequestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchShortUrlRequestTests.m; sourceTree = "<group>"; };
 		4D3122141FD08A9B00185D87 /* BranchNetworkScenario.Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchNetworkScenario.Test.m; sourceTree = "<group>"; };
@@ -338,7 +339,7 @@
 		4D3122351FD08AA700185D87 /* BranchLoadRewardsRequestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchLoadRewardsRequestTests.m; sourceTree = "<group>"; };
 		4D3922BC1E1F0C85004FB7C8 /* BNCCommerceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCCommerceEvent.h; sourceTree = "<group>"; };
 		4D3FA94C1DFF3F6C00E2B6A9 /* BNCConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCConfig.m; sourceTree = "<group>"; };
-		4D4874A81FD22E1900B09DEF /* BranchLibUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BranchLibUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4874A81FD22E1900B09DEF /* Branch Static Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Branch Static Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4874BF1FD22F5500B09DEF /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		4D510D701F0D6014003D720B /* BNCDeepLinkViewControllerInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCDeepLinkViewControllerInstance.h; sourceTree = "<group>"; };
 		4D510D711F0D6014003D720B /* BNCDeepLinkViewControllerInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCDeepLinkViewControllerInstance.m; sourceTree = "<group>"; };
@@ -388,6 +389,7 @@
 		4DAB17961EE8A31B0079EEB4 /* BranchUserCompletedActionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchUserCompletedActionRequest.m; sourceTree = "<group>"; };
 		4DAF63B81F86C269006316E9 /* BranchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchDelegate.h; sourceTree = "<group>"; };
 		4DAF63B91F86C26A006316E9 /* BranchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchDelegate.m; sourceTree = "<group>"; };
+		4DB1F70F1FDF1F7C006DD441 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Tests/Vendor/OHHTTPStubs/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		4DB328021FA10C6200ACF9B0 /* BNCFieldDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCFieldDefines.h; sourceTree = "<group>"; };
 		4DB328031FA10C6200ACF9B0 /* BranchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchEvent.h; sourceTree = "<group>"; };
 		4DB328041FA10C6300ACF9B0 /* BranchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchEvent.m; sourceTree = "<group>"; };
@@ -453,9 +455,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D4875DB1FD2306600B09DEF /* Branch.framework in Frameworks */,
-				4D8A35361FD0BAA7003BE9EC /* OCMock.framework in Frameworks */,
-				2B153F651FDA194500CDA282 /* OHHTTPStubs.framework in Frameworks */,
+				4DB1F70D1FDF1DBC006DD441 /* Branch.framework in Frameworks */,
+				4DA01AFB1FDF352D006328AC /* OCMock.framework in Frameworks */,
+				4DA01AFC1FDF358D006328AC /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,9 +465,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D4874AC1FD22EE200B09DEF /* libBranchLib.a in Frameworks */,
-				4D4874A11FD22E1900B09DEF /* OCMock.framework in Frameworks */,
-				2B153F6A1FDA1F2800CDA282 /* OHHTTPStubs.framework in Frameworks */,
+				4D4874AC1FD22EE200B09DEF /* libBranch.a in Frameworks */,
+				4DB1F70E1FDF1F09006DD441 /* OCMock.framework in Frameworks */,
+				4DB1F7101FDF1F7C006DD441 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +574,7 @@
 			isa = PBXGroup;
 			children = (
 				4D8A35371FD0BAC5003BE9EC /* OHHTTPStubs.framework */,
+				4DB1F70F1FDF1F7C006DD441 /* OHHTTPStubs.framework */,
 				4D8A35351FD0BAA7003BE9EC /* OCMock.framework */,
 			);
 			name = Frameworks;
@@ -735,9 +738,9 @@
 			isa = PBXGroup;
 			children = (
 				E298D0521C73D1B800589D22 /* Branch.framework */,
-				4D3121A11FD0868A00185D87 /* libBranchLib.a */,
-				4D3122081FD089F900185D87 /* BranchUnitTests.xctest */,
-				4D4874A81FD22E1900B09DEF /* BranchLibUnitTests.xctest */,
+				4D3121A11FD0868A00185D87 /* libBranch.a */,
+				4D3122081FD089F900185D87 /* Branch iOS Tests.xctest */,
+				4D4874A81FD22E1900B09DEF /* Branch Static Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -819,9 +822,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4D3121A01FD0868A00185D87 /* BranchLib */ = {
+		4D3121A01FD0868A00185D87 /* Branch Static */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D3121A71FD0868A00185D87 /* Build configuration list for PBXNativeTarget "BranchLib" */;
+			buildConfigurationList = 4D3121A71FD0868A00185D87 /* Build configuration list for PBXNativeTarget "Branch Static" */;
 			buildPhases = (
 				4D31219D1FD0868A00185D87 /* Sources */,
 				4D31219E1FD0868A00185D87 /* Frameworks */,
@@ -832,14 +835,14 @@
 			);
 			dependencies = (
 			);
-			name = BranchLib;
+			name = "Branch Static";
 			productName = libBranch;
-			productReference = 4D3121A11FD0868A00185D87 /* libBranchLib.a */;
+			productReference = 4D3121A11FD0868A00185D87 /* libBranch.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		4D3122071FD089F900185D87 /* BranchUnitTests */ = {
+		4D3122071FD089F900185D87 /* Branch iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D3122101FD089F900185D87 /* Build configuration list for PBXNativeTarget "BranchUnitTests" */;
+			buildConfigurationList = 4D3122101FD089F900185D87 /* Build configuration list for PBXNativeTarget "Branch iOS Tests" */;
 			buildPhases = (
 				4D3122041FD089F900185D87 /* Sources */,
 				4D3122051FD089F900185D87 /* Frameworks */,
@@ -850,14 +853,14 @@
 			dependencies = (
 				4D48747C1FD22DCC00B09DEF /* PBXTargetDependency */,
 			);
-			name = BranchUnitTests;
+			name = "Branch iOS Tests";
 			productName = UnitTests;
-			productReference = 4D3122081FD089F900185D87 /* BranchUnitTests.xctest */;
+			productReference = 4D3122081FD089F900185D87 /* Branch iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4D48747D1FD22E1900B09DEF /* BranchLibUnitTests */ = {
+		4D48747D1FD22E1900B09DEF /* Branch Static Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D4874A51FD22E1900B09DEF /* Build configuration list for PBXNativeTarget "BranchLibUnitTests" */;
+			buildConfigurationList = 4D4874A51FD22E1900B09DEF /* Build configuration list for PBXNativeTarget "Branch Static Tests" */;
 			buildPhases = (
 				4D4874801FD22E1900B09DEF /* Sources */,
 				4D4874A01FD22E1900B09DEF /* Frameworks */,
@@ -868,14 +871,14 @@
 			dependencies = (
 				4D4874AB1FD22E3700B09DEF /* PBXTargetDependency */,
 			);
-			name = BranchLibUnitTests;
+			name = "Branch Static Tests";
 			productName = UnitTests;
-			productReference = 4D4874A81FD22E1900B09DEF /* BranchLibUnitTests.xctest */;
+			productReference = 4D4874A81FD22E1900B09DEF /* Branch Static Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E298D0511C73D1B800589D22 /* Branch */ = {
+		E298D0511C73D1B800589D22 /* Branch iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E298D05A1C73D1B800589D22 /* Build configuration list for PBXNativeTarget "Branch" */;
+			buildConfigurationList = E298D05A1C73D1B800589D22 /* Build configuration list for PBXNativeTarget "Branch iOS" */;
 			buildPhases = (
 				E298D04D1C73D1B800589D22 /* Sources */,
 				E298D04E1C73D1B800589D22 /* Frameworks */,
@@ -886,7 +889,7 @@
 			);
 			dependencies = (
 			);
-			name = Branch;
+			name = "Branch iOS";
 			productName = "Branch iOS SDK Carthage";
 			productReference = E298D0521C73D1B800589D22 /* Branch.framework */;
 			productType = "com.apple.product-type.framework";
@@ -931,10 +934,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E298D0511C73D1B800589D22 /* Branch */,
-				4D3122071FD089F900185D87 /* BranchUnitTests */,
-				4D3121A01FD0868A00185D87 /* BranchLib */,
-				4D48747D1FD22E1900B09DEF /* BranchLibUnitTests */,
+				E298D0511C73D1B800589D22 /* Branch iOS */,
+				4D3122071FD089F900185D87 /* Branch iOS Tests */,
+				4D3121A01FD0868A00185D87 /* Branch Static */,
+				4D48747D1FD22E1900B09DEF /* Branch Static Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -945,8 +948,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3122671FD08AE800185D87 /* Branch-SDK-Tests.strings in Resources */,
+				4D2E68D81FDF32EF00A186A2 /* Branch.framework in Resources */,
 				4D4875DA1FD2304B00B09DEF /* OCMock.framework in Resources */,
-				2B153F671FDA197100CDA282 /* OHHTTPStubs.framework in Resources */,
+				4D2E68D71FDF32C400A186A2 /* OHHTTPStubs.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -956,7 +960,7 @@
 			files = (
 				4D4874A41FD22E1900B09DEF /* Branch-SDK-Tests.strings in Resources */,
 				4D4875D91FD2301F00B09DEF /* OCMock.framework in Resources */,
-				2B153F6B1FDA1F4C00CDA282 /* OHHTTPStubs.framework in Resources */,
+				4D2E68D51FDF2EB900A186A2 /* OHHTTPStubs.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,7 +1053,7 @@
 				4D31225A1FD08AE800185D87 /* BNCCrashlyticsWrapper.Test.m in Sources */,
 				4D31226D1FD08AE800185D87 /* BranchInstallRequestTests.m in Sources */,
 				4D31225D1FD08AE800185D87 /* BNCEncodingUtils.Test.m in Sources */,
-				4DB4A5B01FD0EEA800C93318 /* BranchEvent.Test.swift in Sources */,
+				4D46C4DA1FDF361D00E82FE4 /* BranchEvent.Test.swift in Sources */,
 				4D3122691FD08AE800185D87 /* BranchDelegate.Test.m in Sources */,
 				4D31227A1FD08AE800185D87 /* NSString+Branch.Test.m in Sources */,
 				4D3122681FD08AE800185D87 /* BranchCloseRequestTests.m in Sources */,
@@ -1173,12 +1177,12 @@
 /* Begin PBXTargetDependency section */
 		4D48747C1FD22DCC00B09DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E298D0511C73D1B800589D22 /* Branch */;
+			target = E298D0511C73D1B800589D22 /* Branch iOS */;
 			targetProxy = 4D48747B1FD22DCC00B09DEF /* PBXContainerItemProxy */;
 		};
 		4D4874AB1FD22E3700B09DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4D3121A01FD0868A00185D87 /* BranchLib */;
+			target = 4D3121A01FD0868A00185D87 /* Branch Static */;
 			targetProxy = 4D4874AA1FD22E3700B09DEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1193,7 +1197,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
@@ -1206,7 +1209,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1221,10 +1223,11 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/**",
+					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework",
+					"$(PROJECT_DIR)/Tests/Vendor/OHHTTPStubs/iOS",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path @executable_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
@@ -1243,10 +1246,11 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/**",
+					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework",
+					"$(PROJECT_DIR)/Tests/Vendor/OHHTTPStubs/iOS",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path @executable_path";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
@@ -1265,7 +1269,8 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/**",
+					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework",
+					"$(PROJECT_DIR)/Tests/Vendor/OHHTTPStubs/iOS",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
@@ -1287,7 +1292,8 @@
 				DEVELOPMENT_TEAM = R63EM248DP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Tests/Vendor/**",
+					"$(PROJECT_DIR)/Tests/Vendor/OCMock/iOS\\ framework",
+					"$(PROJECT_DIR)/Tests/Vendor/OHHTTPStubs/iOS",
 				);
 				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @loader_path";
@@ -1302,7 +1308,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1330,7 +1335,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1347,14 +1351,18 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/**";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Branch/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
+				PRODUCT_MODULE_NAME = Branch;
+				PRODUCT_NAME = Branch;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1364,7 +1372,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1392,7 +1399,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1403,15 +1409,19 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/**";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Branch/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
+				PRODUCT_MODULE_NAME = Branch;
+				PRODUCT_NAME = Branch;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1429,8 +1439,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
-				PRODUCT_NAME = Branch;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1447,8 +1455,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
-				PRODUCT_NAME = Branch;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1456,7 +1462,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4D3121A71FD0868A00185D87 /* Build configuration list for PBXNativeTarget "BranchLib" */ = {
+		4D3121A71FD0868A00185D87 /* Build configuration list for PBXNativeTarget "Branch Static" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D3121A81FD0868A00185D87 /* Debug */,
@@ -1465,7 +1471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D3122101FD089F900185D87 /* Build configuration list for PBXNativeTarget "BranchUnitTests" */ = {
+		4D3122101FD089F900185D87 /* Build configuration list for PBXNativeTarget "Branch iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D3122111FD089F900185D87 /* Debug */,
@@ -1474,7 +1480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D4874A51FD22E1900B09DEF /* Build configuration list for PBXNativeTarget "BranchLibUnitTests" */ = {
+		4D4874A51FD22E1900B09DEF /* Build configuration list for PBXNativeTarget "Branch Static Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D4874A61FD22E1900B09DEF /* Debug */,
@@ -1492,7 +1498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E298D05A1C73D1B800589D22 /* Build configuration list for PBXNativeTarget "Branch" */ = {
+		E298D05A1C73D1B800589D22 /* Build configuration list for PBXNativeTarget "Branch iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E298D05B1C73D1B800589D22 /* Debug */,
