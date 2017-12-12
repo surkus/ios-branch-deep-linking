@@ -382,6 +382,7 @@ BranchCondition _Nonnull BranchConditionRefurbished   = @"REFURBISHED";
 }
 
 #pragma mark - Share Sheets
+#if !TARGET_OS_TV
 
 - (UIActivityItemProvider *)getBranchActivityItemWithLinkProperties:(BranchLinkProperties *)linkProperties {
     if (!self.canonicalIdentifier && !self.canonicalUrl && !self.title) {
@@ -524,6 +525,8 @@ BranchCondition _Nonnull BranchConditionRefurbished   = @"REFURBISHED";
         BNCLogWarning(@"Unable to show the share sheet since no view controller is present.");
     }
 }
+
+#endif // !TARGET_OS_TV
 
 #pragma mark - Spotlight
 

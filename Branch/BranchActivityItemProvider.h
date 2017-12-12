@@ -14,6 +14,8 @@
 #import <UIKit/UIKit.h>
 #endif
 
+#if !TARGET_OS_TV
+
 /**
  The `BranchActivityItemProviderDelegate` allows you  to customize the link parameters based on the channel chosen by the user.
  This is useful in the case that you want to add specific items only for Facebook or Twitter for instance.
@@ -40,3 +42,5 @@
 
 + (NSString *)humanReadableChannelWithActivityType:(NSString *)activityString;
 @end
+
+#endif // !TARGET_OS_TV

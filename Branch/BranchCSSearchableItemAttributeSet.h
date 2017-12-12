@@ -18,6 +18,8 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #endif
 
+#if !TARGET_OS_TV
+
 @interface BranchCSSearchableItemAttributeSet : CSSearchableItemAttributeSet
 
 - (id)init;
@@ -33,4 +35,5 @@
 @end
 
 #pragma clang diagnostic pop
+#endif
 #endif

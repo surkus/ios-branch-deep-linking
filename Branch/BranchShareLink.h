@@ -70,9 +70,11 @@ Creates a BranchShareLink object.
 - (instancetype _Nonnull) init NS_UNAVAILABLE;
 + (instancetype _Nonnull) new NS_UNAVAILABLE;
 
+#if !TARGET_OS_TV
 ///Returns an array of activity item providers, one for the Branch Universal Object,
 ///one for the share text (if provided), and one for the shareObject (if provided).
 - (NSArray<UIActivityItemProvider*>*_Nonnull) activityItems;
+#endif
 
 /**
 Presents a UIActivityViewController that shares the Branch link.

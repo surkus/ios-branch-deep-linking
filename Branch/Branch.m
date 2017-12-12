@@ -284,6 +284,8 @@ static Class bnc_networkServiceClass = NULL;
 
 #pragma mark - BrachActivityItemProvider methods
 
+#if !TARGET_OS_TV
+
 + (BranchActivityItemProvider *)getBranchActivityItemWithParams:(NSDictionary *)params {
     return [[BranchActivityItemProvider alloc] initWithParams:params tags:nil feature:nil stage:nil campaign:nil alias:nil delegate:nil];
 }
@@ -312,6 +314,7 @@ static Class bnc_networkServiceClass = NULL;
     return [[BranchActivityItemProvider alloc] initWithParams:params tags:tags feature:feature stage:stage campaign:nil alias:alias delegate:delegate];
 }
 
+#endif // !TARGET_OS_TV
 
 #pragma mark - Configuration methods
 
@@ -544,7 +547,11 @@ static BOOL bnc_enableFingerprintIDInCrashlyticsReports = YES;
 }
 
 
-- (void)initSessionWithLaunchOptions:(NSDictionary *)options isReferrable:(BOOL)isReferrable explicitlyRequestedReferrable:(BOOL)explicitlyRequestedReferrable automaticallyDisplayController:(BOOL)automaticallyDisplayController {
+- (void)initSessionWithLaunchOptions:(NSDictionary *)options
+                        isReferrable:(BOOL)isReferrable
+       explicitlyRequestedReferrable:(BOOL)explicitlyRequestedReferrable
+      automaticallyDisplayController:(BOOL)automaticallyDisplayController {
+
     // Log this early. Not consistently showing up when logged from [Branch initialize].
     [self.class addBranchSDKVersionToCrashlyticsReport];
 
@@ -560,6 +567,8 @@ static BOOL bnc_enableFingerprintIDInCrashlyticsReports = YES;
     // in the application life cycle, and that the SDK is not yet initialized.
 
     // Handle push notification on app launch
+
+    #if !TARGET_OS_TV
     if ([options objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey]) {
         id branchUrlFromPush = [options objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey][BRANCH_PUSH_NOTIFICATION_PAYLOAD_KEY];
         if ([branchUrlFromPush isKindOfClass:[NSString class]]) {
@@ -567,6 +576,7 @@ static BOOL bnc_enableFingerprintIDInCrashlyticsReports = YES;
             self.preferenceHelper.referringURL = branchUrlFromPush;
         }
     }
+    #endif // !TARGET_OS_TV
 
     if ([BNCSystemObserver getOSVersion].integerValue >= 8) {
 

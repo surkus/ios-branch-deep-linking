@@ -205,7 +205,9 @@
         [[BranchContentDiscoverer getInstance] startDiscoveryTaskWithManifest:cdManifest];
     }
 
+
     // Check if there is any Branch View to show
+    #if !TARGET_OS_TV
     NSObject *branchViewDict = data[BRANCH_RESPONSE_KEY_BRANCH_VIEW_DATA];
     if ([branchViewDict isKindOfClass:[NSDictionary class]]) {
         [[BranchViewHandler getInstance]
@@ -213,6 +215,7 @@
             withBranchViewDictionary:(NSDictionary *)branchViewDict
             andWithDelegate:nil];
     }
+    #endif
 
     if (self.callback) {
         self.callback(YES, nil);

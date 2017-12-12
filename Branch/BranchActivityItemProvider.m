@@ -12,6 +12,8 @@
 #import "BNCSystemObserver.h"
 #import "BNCDeviceInfo.h"
 
+#if !TARGET_OS_TV
+
 @interface BranchActivityItemProvider ()
 
 @property (strong, nonatomic) NSDictionary *params;
@@ -239,3 +241,5 @@
 }
 
 @end
+
+#endif // !TARGET_OS_TV

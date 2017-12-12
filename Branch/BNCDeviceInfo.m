@@ -330,7 +330,14 @@ exit:
 }
 
 + (NSString*) userAgentString {
-    
+
+    #if TARGET_OS_TV
+
+    static NSString* brn_browserUserAgentString = @"tvOS";
+    void (^setBrowserUserAgent)(void) = ^() { };
+
+    #else
+
     static NSString* brn_browserUserAgentString = nil;
 
     void (^setBrowserUserAgent)(void) = ^() {
@@ -347,6 +354,8 @@ exit:
             }
         }
 	};
+
+    #endif
 
     NSString* (^browserUserAgent)(void) = ^ NSString* () {
         @synchronized (self) {

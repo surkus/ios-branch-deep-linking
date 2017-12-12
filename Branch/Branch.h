@@ -268,10 +268,10 @@ typedef NS_ENUM(NSUInteger, BranchCreditHistoryOrder) {
 @property (weak) NSObject<BranchDelegate>* delegate;
 
 #pragma mark - BranchActivityItemProvider methods
-
 ///-----------------------------------------
 /// @name BranchActivityItemProvider methods
 ///-----------------------------------------
+#if !TARGET_OS_TV
 
 /**
  Create a BranchActivityItemProvider which subclasses the `UIActivityItemProvider` This can be used for simple sharing via a `UIActivityViewController`.
@@ -355,8 +355,14 @@ typedef NS_ENUM(NSUInteger, BranchCreditHistoryOrder) {
  @param delegate A delegate allowing you to override any of the parameters provided here based on the user-selected channel
  @warning This can fail if the alias is already taken.
  */
-+ (BranchActivityItemProvider *)getBranchActivityItemWithParams:(NSDictionary *)params feature:(NSString *)feature stage:(NSString *)stage tags:(NSArray *)tags alias:(NSString *)alias delegate:(id <BranchActivityItemProviderDelegate>)delegate;
++ (BranchActivityItemProvider *)getBranchActivityItemWithParams:(NSDictionary *)params
+        feature:(NSString *)feature
+          stage:(NSString *)stage
+           tags:(NSArray *)tags
+          alias:(NSString *)alias
+       delegate:(id <BranchActivityItemProviderDelegate>)delegate;
 
+#endif // !TARGET_OS_TV
 
 
 #pragma mark - Initialization methods

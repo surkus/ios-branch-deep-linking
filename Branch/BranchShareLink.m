@@ -16,6 +16,8 @@
 #import "Branch.h"
 @class BranchShareActivityItem;
 
+#if !TARGET_OS_TV
+
 typedef NS_ENUM(NSInteger, BranchShareActivityItemType) {
     BranchShareActivityItemTypeBranchURL = 0,
     BranchShareActivityItemTypeShareText,
@@ -281,3 +283,5 @@ typedef NS_ENUM(NSInteger, BranchShareActivityItemType) {
 }
 
 @end
+
+#endif // !TARGET_OS_TV
