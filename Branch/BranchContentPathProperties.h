@@ -8,10 +8,18 @@
 
 #if __has_feature(modules)
 @import Foundation;
+#if TARGET_OS_OSX
+@import AppKit;
+#else
 @import UIKit;
+#endif
 #else
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#if TARGET_OS_OSX
+@import AppKit;
+#else
+@import UIKit;
+#endif
 #endif
 
 @interface BranchContentPathProperties : NSObject

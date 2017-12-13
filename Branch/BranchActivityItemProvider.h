@@ -8,13 +8,21 @@
 
 #if __has_feature(modules)
 @import Foundation;
+#if TARGET_OS_OSX
+@import AppKit;
+#else
 @import UIKit;
+#endif
 #else
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#if TARGET_OS_OSX
+@import AppKit;
+#else
+@import UIKit;
+#endif
 #endif
 
-#if !TARGET_OS_TV
+#if !(TARGET_OS_TV || TARGET_OS_OSX)
 
 /**
  The `BranchActivityItemProviderDelegate` allows you  to customize the link parameters based on the channel chosen by the user.

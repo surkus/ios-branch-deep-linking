@@ -10,7 +10,11 @@
 #import "BNCSystemObserver.h"
 #import "BNCLog.h"
 #if __has_feature(modules)
+#if TARGET_OS_OSX
+@import AppKit;
+#else
 @import UIKit;
+#endif
 @import SystemConfiguration;
 @import Darwin.POSIX.sys.utsname;
 #else
