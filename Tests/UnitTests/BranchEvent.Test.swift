@@ -80,6 +80,8 @@ class BranchEventTestSwift : BNCTestCase {
 
         event.contentItems = [ branchUniversalObject ]
         event.logEvent()
+
+        BranchEvent.standardEvent(.addToCart, withContentItem: branchUniversalObject).logEvent()
     }
 
     func testExampleSyntaxSwift() {
