@@ -274,7 +274,7 @@ failedToStartSessionWithURL:(NSURL*)url
     if (self.expectFailure) {
 
         XCTAssertNotNil(error);
-        XCTAssertNil(URL);
+        //XCTAssertNil(URL);
         XCTAssertNil(object);
         XCTAssertNil(object);
 
