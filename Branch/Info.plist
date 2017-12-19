@@ -24,8 +24,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>0.21.13</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Branch Metrics. All rights reserved.</string>
 	<key>NSPrincipalClass</key>

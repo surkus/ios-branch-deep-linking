@@ -105,12 +105,8 @@
 		2B5CBD9C1FE66D7800D3379C /* BranchUniversalObject.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CBBE11FE66BA500D3379C /* BranchUniversalObject.Test.m */; };
 		2B5CBD9D1FE66D7800D3379C /* BranchUserCompletedActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CBBE21FE66BA500D3379C /* BranchUserCompletedActionTests.m */; };
 		2B5CBD9E1FE66D7800D3379C /* NSString+Branch.Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CBBE51FE66BA500D3379C /* NSString+Branch.Test.m */; };
-		2B5CBDA11FE66F6100D3379C /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CBBB81FE66BA500D3379C /* OCMock.framework */; };
 		2B5CBDA21FE66F6D00D3379C /* OCMock.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CBBB81FE66BA500D3379C /* OCMock.framework */; };
-		2B5CBDA31FE66F7600D3379C /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CBBC01FE66BA500D3379C /* OHHTTPStubs.framework */; };
 		2B5CBDA41FE66F7B00D3379C /* OHHTTPStubs.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CBBC01FE66BA500D3379C /* OHHTTPStubs.framework */; };
-		2B5CBDA71FE6713500D3379C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CBDA51FE6713500D3379C /* Foundation.framework */; };
-		2B5CBDA81FE6713500D3379C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CBDA61FE6713500D3379C /* UIKit.framework */; };
 		2B5CBDAB1FE671DD00D3379C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CBDA91FE671DD00D3379C /* Foundation.framework */; };
 		2B5CBDAC1FE671DD00D3379C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5CBDAA1FE671DD00D3379C /* UIKit.framework */; };
 		4D00BB251FE84FFB00DA3182 /* BNCAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D1ED27C1FB3A439007390A8 /* BNCAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -483,8 +479,6 @@
 		4D5694B81FE1AE3F00E06CC0 /* BranchCreditHistoryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB177F1EE8A31B0079EEB4 /* BranchCreditHistoryRequest.h */; };
 		4D5694B91FE1AE3F00E06CC0 /* BranchSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17931EE8A31B0079EEB4 /* BranchSpotlightUrlRequest.h */; };
 		4D5694BA1FE1AE3F00E06CC0 /* BranchShortUrlSyncRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17911EE8A31B0079EEB4 /* BranchShortUrlSyncRequest.h */; };
-		4D5AE9EC1FDF5EF900A168A2 /* Branch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E298D0521C73D1B800589D22 /* Branch.framework */; };
-		4D5AE9F11FDF5EF900A168A2 /* Branch.framework in Resources */ = {isa = PBXBuildFile; fileRef = E298D0521C73D1B800589D22 /* Branch.framework */; };
 		4DA01AFB1FDF352D006328AC /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8A35351FD0BAA7003BE9EC /* OCMock.framework */; };
 		4DA01AFC1FDF358D006328AC /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB1F70F1FDF1F7C006DD441 /* OHHTTPStubs.framework */; };
 		4DAB179D1EE8A31B0079EEB4 /* BNCNetworkService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17711EE8A31B0079EEB4 /* BNCNetworkService.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -565,10 +559,11 @@
 		4DB3920C1FD0950F008D0EB4 /* BranchUserCompletedActionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAB17951EE8A31B0079EEB4 /* BranchUserCompletedActionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB3920D1FD0950F008D0EB4 /* NSMutableDictionary+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D291AA91E322ECC007ED118 /* NSMutableDictionary+Branch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DB3920E1FD0950F008D0EB4 /* NSString+Branch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7C3E31F27CF68003696AF /* NSString+Branch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DDAF0481FE867D9001EC6BC /* OCMock.framework in Resources */ = {isa = PBXBuildFile; fileRef = 2B5CBB311FE66BA500D3379C /* OCMock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2B5CBD9F1FE66F4800D3379C /* PBXContainerItemProxy */ = {
+		4D0128F81FE9B00A00ABF1AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E298D0491C73D1B800589D22 /* Project object */;
 			proxyType = 1;
@@ -671,6 +666,8 @@
 		2BD7C3DA1F27CEDB003696AF /* BNCLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCLog.m; sourceTree = "<group>"; };
 		2BD7C3E31F27CF68003696AF /* NSString+Branch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Branch.h"; sourceTree = "<group>"; };
 		2BD7C3E41F27CF68003696AF /* NSString+Branch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Branch.m"; sourceTree = "<group>"; };
+		4D0128FC1FE9B11200ABF1AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4D0128FD1FE9B11200ABF1AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4D1ED27B1FB3A439007390A8 /* BNCAvailability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNCAvailability.m; sourceTree = "<group>"; };
 		4D1ED27C1FB3A439007390A8 /* BNCAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCAvailability.h; sourceTree = "<group>"; };
 		4D1ED27F1FB3A471007390A8 /* BNCSpotlightService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNCSpotlightService.h; sourceTree = "<group>"; };
@@ -815,8 +812,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B5CBDA71FE6713500D3379C /* Foundation.framework in Frameworks */,
-				2B5CBDA81FE6713500D3379C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,9 +836,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5AE9EC1FDF5EF900A168A2 /* Branch.framework in Frameworks */,
-				2B5CBDA11FE66F6100D3379C /* OCMock.framework in Frameworks */,
-				2B5CBDA31FE66F7600D3379C /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1033,9 +1025,11 @@
 			isa = PBXGroup;
 			children = (
 				2B5CBDA91FE671DD00D3379C /* Foundation.framework */,
+				4D0128FD1FE9B11200ABF1AD /* Foundation.framework */,
 				2B5CBDAA1FE671DD00D3379C /* UIKit.framework */,
 				2B5CBDA51FE6713500D3379C /* Foundation.framework */,
 				2B5CBDA61FE6713500D3379C /* UIKit.framework */,
+				4D0128FC1FE9B11200ABF1AD /* UIKit.framework */,
 				2B5CBB281FE66A8A00D3379C /* OHHTTPStubs.framework */,
 				2B5CBB261FE66A6B00D3379C /* OCMock.framework */,
 				4D8A35371FD0BAC5003BE9EC /* OHHTTPStubs.framework */,
@@ -1574,7 +1568,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2B5CBDA01FE66F4800D3379C /* PBXTargetDependency */,
+				4D0128F91FE9B00A00ABF1AD /* PBXTargetDependency */,
 			);
 			name = "Branch tvOS Tests";
 			productName = UnitTests;
@@ -1676,6 +1670,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDAF0481FE867D9001EC6BC /* OCMock.framework in Resources */,
 				4D2E68D51FDF2EB900A186A2 /* OHHTTPStubs.framework in Resources */,
 				2B5CBD6A1FE66D7700D3379C /* Branch-SDK-Tests.strings in Resources */,
 			);
@@ -1692,7 +1687,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D5AE9F11FDF5EF900A168A2 /* Branch.framework in Resources */,
 				2B5CBD8B1FE66D7800D3379C /* Branch-SDK-Tests.strings in Resources */,
 				2B5CBDA21FE66F6D00D3379C /* OCMock.framework in Resources */,
 				2B5CBDA41FE66F7B00D3379C /* OHHTTPStubs.framework in Resources */,
@@ -2061,10 +2055,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B5CBDA01FE66F4800D3379C /* PBXTargetDependency */ = {
+		4D0128F91FE9B00A00ABF1AD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4D37C0A71FDF518D00FEE853 /* Branch tvOS */;
-			targetProxy = 2B5CBD9F1FE66F4800D3379C /* PBXContainerItemProxy */;
+			targetProxy = 4D0128F81FE9B00A00ABF1AD /* PBXContainerItemProxy */;
 		};
 		4D48747C1FD22DCC00B09DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2089,6 +2083,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Debug;
 		};
@@ -2102,6 +2097,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
@@ -2126,6 +2122,7 @@
 				PRODUCT_MODULE_NAME = BranchUnitTests;
 				PRODUCT_NAME = BranchUnitTests;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2152,6 +2149,7 @@
 				PRODUCT_MODULE_NAME = BranchUnitTests;
 				PRODUCT_NAME = BranchUnitTests;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2166,7 +2164,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.tvOS;
 				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -2179,6 +2179,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.tvOS;
 				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -2201,6 +2203,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2225,6 +2228,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.UnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2275,6 +2279,7 @@
 				PRODUCT_MODULE_NAME = BranchUnitTests;
 				PRODUCT_NAME = BranchUnitTests;
 				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2300,6 +2305,7 @@
 				PRODUCT_MODULE_NAME = BranchUnitTests;
 				PRODUCT_NAME = BranchUnitTests;
 				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Tests/UnitTests/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2352,7 +2358,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/**";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Branch/Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2361,9 +2366,9 @@
 				PRODUCT_NAME = Branch;
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -2410,7 +2415,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Vendor/**";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/Branch/Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2419,10 +2423,10 @@
 				PRODUCT_NAME = Branch;
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2439,6 +2443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -2453,6 +2458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
