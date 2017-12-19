@@ -1,6 +1,6 @@
 //
 //  BranchDelegateTest.m
-//  Branch-SDK-Tests
+//  Branch Unit Tests
 //
 //  Created by edward on 11/3/17.
 //  Copyright © 2017 Branch, Inc. All rights reserved.

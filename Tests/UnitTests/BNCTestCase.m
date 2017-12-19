@@ -90,7 +90,7 @@ BOOL BNCTestStringMatchesRegex(NSString *string, NSString *regex) {
 - (NSString*) stringFromBundleWithKey:(NSString*)key {
     NSString *const kItemNotFound = @"<Item-Not-Found>";
     NSString *resource =
-        [[NSBundle bundleForClass:self.class] localizedStringForKey:key value:kItemNotFound table:@"Branch-SDK-Tests"];
+        [[NSBundle bundleForClass:self.class] localizedStringForKey:key value:kItemNotFound table:@"Branch.Test"];
     if ([resource isEqualToString:kItemNotFound]) resource = nil;
     return resource;
 }

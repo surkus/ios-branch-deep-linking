@@ -1,6 +1,6 @@
 //
 //  BranchEvent.Test.swift
-//  Branch-SDK-Tests
+//  Branch Unit Tests
 //
 //  Created by Edward Smith on 10/9/17.
 //  Copyright © 2017 Branch, Inc. All rights reserved.
