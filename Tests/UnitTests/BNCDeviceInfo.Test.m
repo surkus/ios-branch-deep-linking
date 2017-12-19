@@ -74,8 +74,12 @@
     //+ (NSString*) systemBuildVersion;
 
     NSString *string = [BNCDeviceInfo userAgentString];
-    NSString *pattern =
-        @"Mozilla\\/..0 \\(iP.+; CPU.+OS.+like Mac OS X\\) AppleWebKit\\/.+ \\(KHTML, like Gecko\\) Mobile\\/.+";
+    #if TARGET_OS_TV
+        NSString *pattern = @"tvOS";
+    #else
+        NSString *pattern =
+            @"Mozilla\\/..0 \\(iP.+; CPU.+OS.+like Mac OS X\\) AppleWebKit\\/.+ \\(KHTML, like Gecko\\) Mobile\\/.+";
+    #endif
     NSError *error = NULL;
     NSRegularExpression *regex = [NSRegularExpression
         regularExpressionWithPattern:pattern
