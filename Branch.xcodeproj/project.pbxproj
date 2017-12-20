@@ -563,6 +563,8 @@
 		4DE83EA61FE9C32B00BD2D4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0128FD1FE9B11200ABF1AD /* Foundation.framework */; };
 		4DE83EA71FE9C32B00BD2D4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0128FC1FE9B11200ABF1AD /* UIKit.framework */; };
 		4DE83EA81FE9C35D00BD2D4E /* Branch.framework in Resources */ = {isa = PBXBuildFile; fileRef = 4D5694BF1FE1AE3F00E06CC0 /* Branch.framework */; };
+		4DE83EAB1FE9D3F400BD2D4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE83EA91FE9D3F400BD2D4E /* Foundation.framework */; };
+		4DE83EAC1FE9D3F400BD2D4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE83EAA1FE9D3F400BD2D4E /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -588,18 +590,6 @@
 			remoteInfo = BranchLib;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4D31219F1FD0868A00185D87 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B5CBB261FE66A6B00D3379C /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Tests/Vendor/OCMock/tvOS/OCMock.framework; sourceTree = "<group>"; };
@@ -745,6 +735,8 @@
 		4DB328041FA10C6300ACF9B0 /* BranchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchEvent.m; sourceTree = "<group>"; };
 		4DB567381E79FDAF00A8A324 /* BranchShareLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchShareLink.h; sourceTree = "<group>"; };
 		4DB567391E79FDAF00A8A324 /* BranchShareLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchShareLink.m; sourceTree = "<group>"; };
+		4DE83EA91FE9D3F400BD2D4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4DE83EAA1FE9D3F400BD2D4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7DA3BF171D889CE500CA8AE0 /* BranchContentDiscoverer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BranchContentDiscoverer.m; sourceTree = "<group>"; };
 		7DA3BF181D889CE500CA8AE0 /* BranchContentDiscoverer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchContentDiscoverer.h; sourceTree = "<group>"; };
 		7DA3BF191D889CE500CA8AE0 /* BranchContentDiscoveryManifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchContentDiscoveryManifest.h; sourceTree = "<group>"; };
@@ -798,6 +790,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE83EAB1FE9D3F400BD2D4E /* Foundation.framework in Frameworks */,
+				4DE83EAC1FE9D3F400BD2D4E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1035,6 +1029,8 @@
 				2B5CBDA51FE6713500D3379C /* Foundation.framework */,
 				2B5CBDA61FE6713500D3379C /* UIKit.framework */,
 				4D0128FC1FE9B11200ABF1AD /* UIKit.framework */,
+				4DE83EA91FE9D3F400BD2D4E /* Foundation.framework */,
+				4DE83EAA1FE9D3F400BD2D4E /* UIKit.framework */,
 				2B5CBB281FE66A8A00D3379C /* OHHTTPStubs.framework */,
 				2B5CBB261FE66A6B00D3379C /* OCMock.framework */,
 				4D8A35371FD0BAC5003BE9EC /* OHHTTPStubs.framework */,
@@ -1479,7 +1475,6 @@
 			buildPhases = (
 				4D31219D1FD0868A00185D87 /* Sources */,
 				4D31219E1FD0868A00185D87 /* Frameworks */,
-				4D31219F1FD0868A00185D87 /* CopyFiles */,
 				2B767FAB1FD8A53200788317 /* Headers */,
 			);
 			buildRules = (
@@ -2086,8 +2081,11 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEFINES_MODULE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				PRIVATE_HEADERS_FOLDER_PATH = /Headers;
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
+				PUBLIC_HEADERS_FOLDER_PATH = /Headers;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2101,8 +2099,11 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				DEFINES_MODULE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				PRIVATE_HEADERS_FOLDER_PATH = /Headers;
 				PRODUCT_BUNDLE_IDENTIFIER = io.branch.sdk.ios;
+				PUBLIC_HEADERS_FOLDER_PATH = /Headers;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
