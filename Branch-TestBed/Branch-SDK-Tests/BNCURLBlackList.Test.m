@@ -40,22 +40,22 @@
     NSArray *kBadURLs = @[
         @"fb123456:login/464646",
         @"twitterkit-.4545:",
-        @"shsh:oauth/login",
-        @"https://myapp.app.link/oauth_token=fred",
-        @"https://myapp.app.link/auth_token=fred",
-        @"https://myapp.app.link/authtoken=fred",
-        @"https://myapp.app.link/auth=fred",
+        @"shsh:path/htap?oauth/login",
+        @"https://myapp.app.link?oauth_token=fred",
+        @"https://myapp.app.link?stuff&auth_token=fred",
+        @"https://myapp.app.link/path/?authtoken=fred",
+        @"https://myapp.app.link/again?a=b&auth=fred",
         @"fb1234:",
         @"fb1234:/",
         @"fb1234:/this-is-some-extra-info/?whatever",
         @"fb1234:/this-is-some-extra-info/?whatever:andstuff",
         @"myscheme:path/to/resource?oauth=747474",
-        @"myscheme:oauth=747474",
-        @"myscheme:/oauth=747474",
-        @"myscheme://oauth=747474",
-        @"myscheme://path/oauth=747474",
-        @"myscheme://path/:oauth=747474",
-        @"https://google.com/userprofile/devonbanks=oauth?",
+        @"myscheme:?oauth=747474",
+        @"myscheme:/?oauth=747474",
+        @"myscheme://?oauth=747474",
+        @"myscheme://path?oauth=747474",
+        @"myscheme://path/?oauth=747474",
+        @"https://google.com/userprofile/devonbanks=oauth?oauth",
     ];
     return kBadURLs;
 }
@@ -67,7 +67,10 @@
         @"https://myapp.app.link/12345/link",
         @"fb123x:/",
         @"https://myapp.app.link?authentic=true&tokemonsta=false",
-        @"myscheme://path/brauth=747474",
+        @"myscheme://path/urauth=747474",
+        @"myscheme://path?urauth=747474",
+        @"myscheme:oauth=747474",
+        @"https://google.com/userprofile/devonbanks=oauth?",
     ];
     return kGoodURLs;
 }
@@ -85,10 +88,10 @@
     // Test download list.
     XCTestExpectation *expectation = [self expectationWithDescription:@"BlackList Download"];
     BNCURLBlackList *blackList = [BNCURLBlackList new];
-    blackList.blackListJSONURL = [NSURL URLWithString:@"https://cdn.branch.io/sdk/uriskiplist_tv1.json"];
+    blackList.blackListJSONURL = [NSURL URLWithString:@"https://cdn.branch.io/sdk/uriskiplist_v1.json"];
     [blackList refreshBlackListFromServerWithCompletion:^ (NSError*error, NSArray*list) {
         XCTAssertNil(error);
-        XCTAssertTrue(list.count == 7);
+        XCTAssertTrue(list.count == 6);
         [expectation fulfill];
     }];
     [self awaitExpectations];
@@ -111,10 +114,10 @@
     // Test download list.
     XCTestExpectation *expectation = [self expectationWithDescription:@"BlackList Download"];
     BNCURLBlackList *blackList = [BNCURLBlackList new];
-    blackList.blackListJSONURL = [NSURL URLWithString:@"https://cdn.branch.io/sdk/uriskiplist_tv1.json"];
+    blackList.blackListJSONURL = [NSURL URLWithString:@"https://cdn.branch.io/sdk/uriskiplist_v1.json"];
     [blackList refreshBlackListFromServerWithCompletion:^ (NSError*error, NSArray*list) {
         XCTAssertNil(error);
-        XCTAssertTrue(list.count == 7);
+        XCTAssertTrue(list.count == 6);
         [expectation fulfill];
     }];
     [self awaitExpectations];
@@ -139,7 +142,7 @@
         [invocation getArgument:&dictionary atIndex:2];
 
         NSString* link = dictionary[@"universal_link_url"];
-        NSString *pattern = @"^(?i)((http|https):\\/\\/).*[\\/|?|#].*\\b(password|o?auth|o?auth.?token|access|access.?token)\\b";
+        NSString *pattern = @"^(?i).+:.*[?].*\\b(password|o?auth|o?auth.?token|access|access.?token)\\b";
         NSLog(@"\n   Link: '%@'\nPattern: '%@'\n.", link, pattern);
         if ([link isEqualToString:pattern]) {
             [expectation fulfill];

@@ -65,4 +65,11 @@
         @"Network operation of class 'BNCErrorTest' does not conform to the BNCNetworkOperationProtocol."]);
 }
 
+- (void) testHTTPStatusError {
+    NSError *error = [NSError errorWithHTTPStatusCode:404];
+    XCTAssertTrue([error.domain isEqualToString:NSURLErrorDomain]);
+    XCTAssertTrue(error.code == NSURLErrorBadServerResponse);
+    XCTAssertTrue([error.localizedDescription isEqualToString:@"HTTP status code 404: not found."]);
+}
+
 @end

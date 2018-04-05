@@ -34,8 +34,7 @@
         @"^pdk\\d+:",
         @"^twitterkit-.*:",
         @"^com\\.googleusercontent\\.apps\\.\\d+-.*:\\/oauth",
-        @"^(?i)(?!(http|https):).*(:|:.*\\b)(password|o?auth|o?auth.?token|access|access.?token)\\b",
-        @"^(?i)((http|https):\\/\\/).*[\\/|?|#].*\\b(password|o?auth|o?auth.?token|access|access.?token)\\b",
+        @"^(?i).+:.*[?].*\\b(password|o?auth|o?auth.?token|access|access.?token)\\b"
     ];
     self.blackListVersion = -1; // First time always refresh the list version, version 0.
 
@@ -122,7 +121,7 @@
 
     self.error = nil;
     NSString *urlString = [self.blackListJSONURL absoluteString];
-    if (!urlString) {
+    if (!urlString.length) {
         urlString = [NSString stringWithFormat:@"https://cdn.branch.io/sdk/uriskiplist_v%ld.json",
             (long) self.blackListVersion+1];
     }
@@ -145,9 +144,9 @@
 }
 
 - (void) processServerOperation:(id<BNCNetworkOperationProtocol>)operation {
-    NSError *error = nil;
+    self.error = nil;
     NSString *responseString = nil;
-    if (operation.responseData)
+    if (operation.responseData.length)
         responseString = [[NSString alloc] initWithData:operation.responseData encoding:NSUTF8StringEncoding];
     if (operation.response.statusCode == 404) {
         BNCLogDebugSDK(@"No new BlackList refresh found.");
@@ -155,12 +154,22 @@
         BNCLogDebugSDK(@"BlackList refresh result. Error: %@ status: %ld body:\n%@.",
             operation.error, operation.response.statusCode, responseString);
     }
-    if (operation.error || operation.responseData == nil || operation.response.statusCode != 200) {
+    if (operation.error)
         self.error = operation.error;
-        return;
-    }
+    else
+    if (operation.response.statusCode != 200)
+        self.error = [NSError errorWithHTTPStatusCode:operation.response.statusCode];
+    else
+    if (operation.responseData.length == 0)
+        self.error = [NSError errorWithDomain:NSNetServicesErrorDomain
+            code:NSURLErrorZeroByteResource userInfo:nil];
 
-    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:operation.responseData options:0 error:&error];
+    if (self.error)
+        return;
+
+    NSError *error = nil;
+    NSDictionary *dictionary =
+        [NSJSONSerialization JSONObjectWithData:operation.responseData options:0 error:&error];
     if (error) {
         self.error = error;
         BNCLogError(@"Can't parse JSON: %@.", error);

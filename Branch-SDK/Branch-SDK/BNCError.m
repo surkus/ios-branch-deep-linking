@@ -117,8 +117,23 @@ __attribute__((constructor)) void BNCForceNSErrorCategoryToLoad() {
     return [NSError branchErrorWithCode:errorCode error:error localizedMessage:nil];
 }
 
-+ (NSError*_Nonnull) branchErrorWithCode:(BNCErrorCode)errorCode localizedMessage:(NSString*_Nullable)message {
++ (NSError*_Nonnull) branchErrorWithCode:(BNCErrorCode)errorCode
+                        localizedMessage:(NSString*_Nullable)message {
     return [NSError branchErrorWithCode:errorCode error:nil localizedMessage:message];
+}
+
++ (NSError*_Nonnull) errorWithHTTPStatusCode:(NSInteger)statusCode {
+    NSString *d = nil;
+    NSString *shortString = [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
+    if (shortString.length > 0) {
+        d = [NSString stringWithFormat:@"HTTP status code %ld: %@.",
+                (long) statusCode, shortString];
+    } else {
+        d = [NSString stringWithFormat:@"HTTP status code %ld.", (long) statusCode];
+    }
+    return [NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorBadServerResponse userInfo:@{
+        NSLocalizedDescriptionKey: d
+    }];
 }
 
 @end
