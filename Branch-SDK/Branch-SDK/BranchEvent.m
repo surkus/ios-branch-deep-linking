@@ -208,14 +208,8 @@ BranchStandardEvent BranchStandardEventUnlockAchievement      = @"UNLOCK_ACHIEVE
     }
 
     NSMutableDictionary *eventDictionary = [NSMutableDictionary new];
-    eventDictionary[@"name"] = _eventName;
-
-    NSDictionary *propertyDictionary = [self dictionary];
-    if (propertyDictionary.count) {
-        eventDictionary[@"event_data"] = propertyDictionary;
-    }
-    eventDictionary[@"custom_data"] = eventDictionary[@"event_data"][@"custom_data"];
-    eventDictionary[@"event_data"][@"custom_data"] = nil;
+    eventDictionary[@"event"] = _eventName;
+    eventDictionary[@"identity"] = [BNCPreferenceHelper preferenceHelper].userIdentity;
 
     NSMutableArray *contentItemDictionaries = [NSMutableArray new];
     for (BranchUniversalObject *contentItem in self.contentItems) {
@@ -230,10 +224,7 @@ BranchStandardEvent BranchStandardEventUnlockAchievement      = @"UNLOCK_ACHIEVE
     }
 
     BNCPreferenceHelper *preferenceHelper = [BNCPreferenceHelper preferenceHelper];
-    NSString *serverURL =
-        ([self.class.standardEvents containsObject:self.eventName])
-        ? [NSString stringWithFormat:@"%@/%@", preferenceHelper.branchAPIURL, @"v2/event/standard"]
-        : [NSString stringWithFormat:@"%@/%@", preferenceHelper.branchAPIURL, @"v2/event/custom"];
+    NSString *serverURL = [NSString stringWithFormat:@"%@/%@", preferenceHelper.branchAPIURL, @"v1/event"];
 
     BranchEventRequest *request =
 		[[BranchEventRequest alloc]
