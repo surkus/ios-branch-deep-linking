@@ -49,43 +49,43 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
                    eventDictionary:(NSDictionary*)eventDictionary
                         completion:(void (^)(NSDictionary* response, NSError* error))completion {
 
-	self = [super init];
-	if (!self) return self;
+  self = [super init];
+  if (!self) return self;
 
-	self.serverURL = serverURL;
-	self.eventDictionary = eventDictionary;
-	self.completion = completion;
-	return self;
+  self.serverURL = serverURL;
+  self.eventDictionary = eventDictionary;
+  self.completion = completion;
+  return self;
 }
 
 - (void)makeRequest:(BNCServerInterface *)serverInterface
-			    key:(NSString *)key
+          key:(NSString *)key
            callback:(BNCServerCallback)callback {
     [serverInterface postRequest:self.eventDictionary
-							 url:[self.serverURL absoluteString]
-							 key:key
-						callback:callback];
+               url:[self.serverURL absoluteString]
+               key:key
+            callback:callback];
 }
 
 - (void)processResponse:(BNCServerResponse*)response
-				  error:(NSError*)error {
-	NSDictionary *dictionary =
-		([response.data isKindOfClass:[NSDictionary class]])
-		? (NSDictionary*) response.data
-		: nil;
-		
-	if (self.completion)
-		self.completion(dictionary, error);
+          error:(NSError*)error {
+  NSDictionary *dictionary =
+    ([response.data isKindOfClass:[NSDictionary class]])
+    ? (NSDictionary*) response.data
+    : nil;
+
+  if (self.completion)
+    self.completion(dictionary, error);
 }
 
 #pragma mark BranchEventRequest NSSecureCoding
 
 - (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
-	if (!self) return self;
+  if (!self) return self;
 
-	self.serverURL = [decoder decodeObjectOfClass:NSString.class forKey:@"serverURL"];
-	self.eventDictionary = [decoder decodeObjectOfClass:NSDictionary.class forKey:@"eventDictionary"];
+  self.serverURL = [decoder decodeObjectOfClass:NSString.class forKey:@"serverURL"];
+  self.eventDictionary = [decoder decodeObjectOfClass:NSDictionary.class forKey:@"eventDictionary"];
     return self;
 }
 
@@ -117,7 +117,7 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
     self = [super init];
     if (!self) return self;
     _eventName = name;
-    
+
     _adType = BranchEventAdTypeNone;
     return self;
 }
@@ -163,8 +163,8 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
 }
 
 - (void) setContentItems:(NSMutableArray<BranchUniversalObject *> *)contentItems {
-    
-    
+
+
     if ([contentItems isKindOfClass:[BranchUniversalObject class]]) {
         _contentItems = [NSMutableArray arrayWithObject:contentItems];
     } else
@@ -177,16 +177,16 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
     switch (adType) {
         case BranchEventAdTypeBanner:
             return @"BANNER";
-            
+
         case BranchEventAdTypeInterstitial:
             return @"INTERSTITIAL";
-            
+
         case BranchEventAdTypeRewardedVideo:
             return @"REWARDED_VIDEO";
-            
+
         case BranchEventAdTypeNative:
             return @"NATIVE";
-            
+
         case BranchEventAdTypeNone:
         default:
             return nil;
@@ -195,7 +195,7 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
 
 - (NSDictionary*) dictionary {
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
-    
+
     #define BNCFieldDefinesDictionaryFromSelf
     #include "BNCFieldDefines.h"
 
@@ -209,14 +209,14 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
     addString(eventDescription, description);
     addString(searchQuery,      search_query)
     addDictionary(customData,   custom_data);
-    
+
     #include "BNCFieldDefines.h"
 
     NSString *adTypeString = [self jsonStringForAdType:self.adType];
     if (adTypeString.length > 0) {
         [dictionary setObject:adTypeString forKey:@"ad_type"];
     }
-    
+
     return dictionary;
 }
 
@@ -262,36 +262,23 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
 
 - (BranchEventRequest *)buildRequestWithEventDictionary:(NSDictionary *)eventDictionary {
     BNCPreferenceHelper *preferenceHelper = [BNCPreferenceHelper preferenceHelper];
-    
-    NSString *serverURL =
-    ([self.class.standardEvents containsObject:self.eventName])
-    ? [NSString stringWithFormat:@"%@/%@", preferenceHelper.branchAPIURL, @"v2/event/standard"]
-    : [NSString stringWithFormat:@"%@/%@", preferenceHelper.branchAPIURL, @"v2/event/custom"];
-    
+
+    NSString *serverURL = [NSString stringWithFormat:@"%@/%@", preferenceHelper.branchAPIURL, @"v1/event"];
+
     BranchEventRequest *request =
     [[BranchEventRequest alloc]
      initWithServerURL:[NSURL URLWithString:serverURL]
      eventDictionary:eventDictionary
      completion:nil];
-    
+
     return request;
 }
 
 - (NSDictionary *)buildEventDictionary {
     NSMutableDictionary *eventDictionary = [NSMutableDictionary new];
-    eventDictionary[@"name"] = _eventName;
-    
-    if (self.alias.length > 0) {
-        eventDictionary[@"customer_event_alias"] = self.alias;
-    }
-    
-    NSDictionary *propertyDictionary = [self dictionary];
-    if (propertyDictionary.count) {
-        eventDictionary[@"event_data"] = propertyDictionary;
-    }
-    eventDictionary[@"custom_data"] = eventDictionary[@"event_data"][@"custom_data"];
-    eventDictionary[@"event_data"][@"custom_data"] = nil;
-    
+    eventDictionary[@"event"] = _eventName;
+    eventDictionary[@"identity"] = [BNCPreferenceHelper preferenceHelper].userIdentity;
+
     NSMutableArray *contentItemDictionaries = [NSMutableArray new];
     for (BranchUniversalObject *contentItem in self.contentItems) {
         NSDictionary *dictionary = [contentItem dictionary];
@@ -299,7 +286,7 @@ BranchStandardEvent BranchStandardEventReserve                = @"RESERVE";
             [contentItemDictionaries addObject:dictionary];
         }
     }
-    
+
     if (contentItemDictionaries.count) {
         eventDictionary[@"content_items"] = contentItemDictionaries;
     }
